@@ -1,0 +1,15 @@
+package com.relative.brecreditosnuevos;
+
+import com.relative.brecreditosnuevos.objetosnegocio.Cliente;
+import com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio;
+
+rule "Politica04"
+	dialect "mvel"
+	ruleflow-group "Politica04"
+	when
+		>cliente : Cliente( tipo != "Q" , tipo != "C1" , tipo != "C2" )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.getCodigoPolitica().add("4");
+end

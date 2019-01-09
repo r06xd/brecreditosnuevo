@@ -1,0 +1,15 @@
+package com.relative.brecreditosnuevos;
+
+import com.relative.brecreditosnuevos.objetosnegocio.Cliente;
+import com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio;
+
+rule "Politica11"
+	dialect "mvel"
+	ruleflow-group "Politica11"
+	when
+		>cliente : Cliente( vinculadoQuski == "S" )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.getCodigoPolitica().add("11");
+end

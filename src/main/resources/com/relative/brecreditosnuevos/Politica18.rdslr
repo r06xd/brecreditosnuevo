@@ -1,0 +1,15 @@
+package com.relative.brecreditosnuevos;
+
+import java.lang.Number;
+import com.relative.brecreditosnuevos.objetosnegocio.Cliente;
+import com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio;
+
+rule "Politica18"
+	dialect "mvel"
+	ruleflow-group "Politica18"
+	when
+		>cliente : Cliente( numeroCreditos > 5 )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.getCodigoPolitica().add("18");
+end

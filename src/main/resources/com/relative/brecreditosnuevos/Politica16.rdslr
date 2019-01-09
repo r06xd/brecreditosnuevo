@@ -1,0 +1,13 @@
+package com.relative.brecreditosnuevos;
+
+import java.lang.Number;
+import com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio;
+
+rule "Politica16"
+	dialect "mvel"
+	ruleflow-group "Politica16"
+	when
+		>variablesNegocio : VariablesNegocio( totalGarantia > 10000.00 )
+	then
+		>variablesNegocio.setTotalGarantia( 10000.00 );
+end

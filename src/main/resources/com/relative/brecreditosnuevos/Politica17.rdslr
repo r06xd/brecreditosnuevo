@@ -1,0 +1,16 @@
+package com.relative.brecreditosnuevos;
+
+import java.lang.Number;
+import com.relative.brecreditosnuevos.objetosnegocio.ParametrosRiesgo;
+import com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio;
+
+rule "Politica17"
+	dialect "mvel"
+	ruleflow-group "Politica17"
+	when
+		>parametrosRiesgo : ParametrosRiesgo( riesgoTotal > "20000" )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.getCodigoPolitica().add("17");
+end
