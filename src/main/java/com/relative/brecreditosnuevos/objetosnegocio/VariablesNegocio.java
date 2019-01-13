@@ -52,6 +52,9 @@ public class VariablesNegocio implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("CodigoPolitica")
 	private java.util.List<java.lang.String> codigoPolitica;
 
+	@org.kie.api.definition.type.Label(value = "Total Precio Oro")
+	private java.lang.Double totalPrecioOro;
+
 	public VariablesNegocio() {
 	}
 
@@ -177,6 +180,14 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.codigoPolitica = codigoPolitica;
 	}
 
+	public java.lang.Double getTotalPrecioOro() {
+		return this.totalPrecioOro;
+	}
+
+	public void setTotalPrecioOro(java.lang.Double totalPrecioOro) {
+		this.totalPrecioOro = totalPrecioOro;
+	}
+
 	public VariablesNegocio(java.lang.Double totalGarantia,
 			java.lang.Double totalPeso, java.lang.Double precioGramo,
 			java.lang.String mensaje, java.lang.Boolean detener,
@@ -188,7 +199,8 @@ public class VariablesNegocio implements java.io.Serializable {
 			java.lang.String mensajeVinculadoQuski,
 			java.lang.String mensajeImpagoQuski,
 			java.lang.String codigoPoliticaBloqueo, java.lang.String politica,
-			java.util.List<java.lang.String> codigoPolitica) {
+			java.util.List<java.lang.String> codigoPolitica,
+			java.lang.Double totalPrecioOro) {
 		this.totalGarantia = totalGarantia;
 		this.totalPeso = totalPeso;
 		this.precioGramo = precioGramo;
@@ -204,6 +216,7 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.codigoPoliticaBloqueo = codigoPoliticaBloqueo;
 		this.politica = politica;
 		this.codigoPolitica = codigoPolitica;
+		this.totalPrecioOro = totalPrecioOro;
 	}
 
 }

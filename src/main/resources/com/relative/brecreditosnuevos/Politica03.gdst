@@ -180,10 +180,10 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>

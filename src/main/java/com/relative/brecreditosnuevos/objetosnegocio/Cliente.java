@@ -113,6 +113,9 @@ public class Cliente implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("ReclaculoColateral")
 	private java.lang.Boolean reclaculoColateral;
 
+	@org.kie.api.definition.type.Label(value = "Riesgo Acumulado")
+	private java.lang.Double riesgoAcumulado;
+
 	public Cliente() {
 	}
 
@@ -404,6 +407,14 @@ public class Cliente implements java.io.Serializable {
 		this.reclaculoColateral = reclaculoColateral;
 	}
 
+	public java.lang.Double getRiesgoAcumulado() {
+		return this.riesgoAcumulado;
+	}
+
+	public void setRiesgoAcumulado(java.lang.Double riesgoAcumulado) {
+		this.riesgoAcumulado = riesgoAcumulado;
+	}
+
 	public Cliente(java.lang.Integer edad, java.util.Date fechaNacimiento,
 			java.lang.String cargas, java.lang.String categoriaValor,
 			java.lang.Integer score, java.lang.Integer grupo,
@@ -423,7 +434,8 @@ public class Cliente implements java.io.Serializable {
 			java.lang.Integer colateralAdicional,
 			java.lang.String vinculadoQuski, java.lang.String impagoQuski,
 			java.lang.Integer totalCreditos, java.lang.Integer grupoInterno,
-			java.lang.Boolean reclaculoColateral) {
+			java.lang.Boolean reclaculoColateral,
+			java.lang.Double riesgoAcumulado) {
 		this.edad = edad;
 		this.fechaNacimiento = fechaNacimiento;
 		this.cargas = cargas;
@@ -460,6 +472,7 @@ public class Cliente implements java.io.Serializable {
 		this.totalCreditos = totalCreditos;
 		this.grupoInterno = grupoInterno;
 		this.reclaculoColateral = reclaculoColateral;
+		this.riesgoAcumulado = riesgoAcumulado;
 	}
 
 }
