@@ -25,6 +25,9 @@ public class ParametrosRiesgo implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("CalificacionMupi")
 	private java.lang.String calificacionMupi;
 
+	@org.kie.api.definition.type.Label(value = "CoberturaExcepcionada")
+	private java.lang.Integer coberturaExcepcionada;
+
 	public ParametrosRiesgo() {
 	}
 
@@ -96,13 +99,22 @@ public class ParametrosRiesgo implements java.io.Serializable {
 		this.calificacionMupi = calificacionMupi;
 	}
 
+	public java.lang.Integer getCoberturaExcepcionada() {
+		return this.coberturaExcepcionada;
+	}
+
+	public void setCoberturaExcepcionada(java.lang.Integer coberturaExcepcionada) {
+		this.coberturaExcepcionada = coberturaExcepcionada;
+	}
+
 	public ParametrosRiesgo(java.lang.String PerfilRiesgo,
 			java.lang.String OrigenOperacion, java.lang.String RiesgoTotal,
 			java.lang.String FechaNacimiento,
 			java.lang.String PerfilPreferencia,
 			java.lang.String AgenciaOriginacion,
 			java.lang.String IdentificacionCliente,
-			java.lang.String calificacionMupi) {
+			java.lang.String calificacionMupi,
+			java.lang.Integer coberturaExcepcionada) {
 		this.PerfilRiesgo = PerfilRiesgo;
 		this.OrigenOperacion = OrigenOperacion;
 		this.RiesgoTotal = RiesgoTotal;
@@ -111,5 +123,6 @@ public class ParametrosRiesgo implements java.io.Serializable {
 		this.AgenciaOriginacion = AgenciaOriginacion;
 		this.IdentificacionCliente = IdentificacionCliente;
 		this.calificacionMupi = calificacionMupi;
+		this.coberturaExcepcionada = coberturaExcepcionada;
 	}
 }

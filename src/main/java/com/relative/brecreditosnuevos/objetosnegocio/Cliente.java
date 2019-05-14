@@ -110,11 +110,35 @@ public class Cliente implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("GrupoInterno")
 	private java.lang.Integer grupoInterno;
 
-	@org.kie.api.definition.type.Label("ReclaculoColateral")
-	private java.lang.Boolean reclaculoColateral;
-
-	@org.kie.api.definition.type.Label(value = "Riesgo Acumulado")
+	@org.kie.api.definition.type.Label("Riesgo Acumulado")
 	private java.lang.Double riesgoAcumulado;
+
+	@org.kie.api.definition.type.Label("ColateralExcepcionada")
+	private java.lang.Integer colateralExcepcionada;
+
+	@org.kie.api.definition.type.Label("ColateralCalculoBre")
+	private java.lang.Integer colateralCalculoBre;
+
+	@org.kie.api.definition.type.Label("ScoreComportamiento")
+	private java.lang.Integer scoreComportamiento;
+
+	@org.kie.api.definition.type.Label("PerfilComportamiento")
+	private java.lang.Integer perfilComportamiento;
+
+	@org.kie.api.definition.type.Label("MontoCarteraVencida")
+	private java.lang.Double montoCarteraVencida;
+
+	@org.kie.api.definition.type.Label("MontoCarteraCastigada")
+	private java.lang.Double montoCarteraCastigada;
+
+	@org.kie.api.definition.type.Label("RecalculoColateral")
+	private java.lang.Boolean recalculoColateral;
+
+	@org.kie.api.definition.type.Label("ColateralOriginal")
+	private java.lang.Integer colateralOriginal;
+
+	@org.kie.api.definition.type.Label(value = "TiempoCancelacion")
+	private java.lang.Integer tiempoCancelacion;
 
 	public Cliente() {
 	}
@@ -399,20 +423,84 @@ public class Cliente implements java.io.Serializable {
 		this.grupoInterno = grupoInterno;
 	}
 
-	public java.lang.Boolean getReclaculoColateral() {
-		return this.reclaculoColateral;
-	}
-
-	public void setReclaculoColateral(java.lang.Boolean reclaculoColateral) {
-		this.reclaculoColateral = reclaculoColateral;
-	}
-
 	public java.lang.Double getRiesgoAcumulado() {
 		return this.riesgoAcumulado;
 	}
 
 	public void setRiesgoAcumulado(java.lang.Double riesgoAcumulado) {
 		this.riesgoAcumulado = riesgoAcumulado;
+	}
+
+	public java.lang.Integer getColateralExcepcionada() {
+		return this.colateralExcepcionada;
+	}
+
+	public void setColateralExcepcionada(java.lang.Integer colateralExcepcionada) {
+		this.colateralExcepcionada = colateralExcepcionada;
+	}
+
+	public java.lang.Integer getColateralCalculoBre() {
+		return this.colateralCalculoBre;
+	}
+
+	public void setColateralCalculoBre(java.lang.Integer colateralCalculoBre) {
+		this.colateralCalculoBre = colateralCalculoBre;
+	}
+
+	public java.lang.Integer getScoreComportamiento() {
+		return this.scoreComportamiento;
+	}
+
+	public void setScoreComportamiento(java.lang.Integer scoreComportamiento) {
+		this.scoreComportamiento = scoreComportamiento;
+	}
+
+	public java.lang.Integer getPerfilComportamiento() {
+		return this.perfilComportamiento;
+	}
+
+	public void setPerfilComportamiento(java.lang.Integer perfilComportamiento) {
+		this.perfilComportamiento = perfilComportamiento;
+	}
+
+	public java.lang.Double getMontoCarteraVencida() {
+		return this.montoCarteraVencida;
+	}
+
+	public void setMontoCarteraVencida(java.lang.Double montoCarteraVencida) {
+		this.montoCarteraVencida = montoCarteraVencida;
+	}
+
+	public java.lang.Double getMontoCarteraCastigada() {
+		return this.montoCarteraCastigada;
+	}
+
+	public void setMontoCarteraCastigada(java.lang.Double montoCarteraCastigada) {
+		this.montoCarteraCastigada = montoCarteraCastigada;
+	}
+
+	public java.lang.Boolean getRecalculoColateral() {
+		return this.recalculoColateral;
+	}
+
+	public void setRecalculoColateral(java.lang.Boolean recalculoColateral) {
+		this.recalculoColateral = recalculoColateral;
+	}
+
+	public java.lang.Integer getColateralOriginal() {
+		return this.colateralOriginal;
+	}
+
+	public void setColateralOriginal(java.lang.Integer colateralOriginal) {
+		this.colateralOriginal = colateralOriginal;
+	}
+
+	public java.lang.Integer getTiempoCancelacion() {
+		return this.tiempoCancelacion;
+	}
+
+	public void setTiempoCancelacion(java.lang.Integer tiempoCancelacion) {
+		this.tiempoCancelacion = tiempoCancelacion;
 	}
 
 	public Cliente(java.lang.Integer edad, java.util.Date fechaNacimiento,
@@ -434,8 +522,16 @@ public class Cliente implements java.io.Serializable {
 			java.lang.Integer colateralAdicional,
 			java.lang.String vinculadoQuski, java.lang.String impagoQuski,
 			java.lang.Integer totalCreditos, java.lang.Integer grupoInterno,
-			java.lang.Boolean reclaculoColateral,
-			java.lang.Double riesgoAcumulado) {
+			java.lang.Double riesgoAcumulado,
+			java.lang.Integer colateralExcepcionada,
+			java.lang.Integer colateralCalculoBre,
+			java.lang.Integer scoreComportamiento,
+			java.lang.Integer perfilComportamiento,
+			java.lang.Double montoCarteraVencida,
+			java.lang.Double montoCarteraCastigada,
+			java.lang.Boolean recalculoColateral,
+			java.lang.Integer colateralOriginal,
+			java.lang.Integer tiempoCancelacion) {
 		this.edad = edad;
 		this.fechaNacimiento = fechaNacimiento;
 		this.cargas = cargas;
@@ -471,8 +567,16 @@ public class Cliente implements java.io.Serializable {
 		this.impagoQuski = impagoQuski;
 		this.totalCreditos = totalCreditos;
 		this.grupoInterno = grupoInterno;
-		this.reclaculoColateral = reclaculoColateral;
 		this.riesgoAcumulado = riesgoAcumulado;
+		this.colateralExcepcionada = colateralExcepcionada;
+		this.colateralCalculoBre = colateralCalculoBre;
+		this.scoreComportamiento = scoreComportamiento;
+		this.perfilComportamiento = perfilComportamiento;
+		this.montoCarteraVencida = montoCarteraVencida;
+		this.montoCarteraCastigada = montoCarteraCastigada;
+		this.recalculoColateral = recalculoColateral;
+		this.colateralOriginal = colateralOriginal;
+		this.tiempoCancelacion = tiempoCancelacion;
 	}
 
 }

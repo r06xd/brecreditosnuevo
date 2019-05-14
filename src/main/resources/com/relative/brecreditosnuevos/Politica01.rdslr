@@ -8,7 +8,7 @@ rule "Politica01"
 	ruleflow-group "Politica01"
 	when
 		>variablesNegocio : VariablesNegocio( )
-		>cliente : Cliente( edad <= 18 || edad >= 74 )
+		>cliente : Cliente( edad < 18 || edad > 74 )
 	then
 		>variablesNegocio.setDetener( true );
 		>variablesNegocio.getCodigoPolitica().add("1");

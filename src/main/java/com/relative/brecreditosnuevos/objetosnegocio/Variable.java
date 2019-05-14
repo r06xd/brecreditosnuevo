@@ -15,6 +15,9 @@ public class Variable implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Valor")
 	private java.lang.String valor;
 
+	@org.kie.api.definition.type.Label(value = "Codigo")
+	private java.lang.String codigo;
+
 	public Variable() {
 	}
 
@@ -49,11 +52,20 @@ public class Variable implements java.io.Serializable {
 		this.valor = valor;
 	}
 
+	public java.lang.String getCodigo() {
+		return this.codigo;
+	}
+
+	public void setCodigo(java.lang.String codigo) {
+		this.codigo = codigo;
+	}
+
 	public Variable(java.lang.String nombre, java.lang.Integer orden,
-			java.lang.String valor) {
+			java.lang.String valor, java.lang.String codigo) {
 		this.nombre = nombre;
 		this.orden = orden;
 		this.valor = valor;
+		this.codigo = codigo;
 	}
 
 }

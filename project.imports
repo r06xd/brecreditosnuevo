@@ -26,16 +26,16 @@
         <type>java.util.ArrayList</type>
       </import>
       <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.SimularResult</type>
+      </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
       </import>
       <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
       </import>
       <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.SimularResult</type>
-      </import>
-      <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
       </import>
       <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.OpcionesRenovacion</type>

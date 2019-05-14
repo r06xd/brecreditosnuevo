@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>ScoreClienteInternoDiasMoraPromedio</tableName>
+  <tableName>Precio</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>-1</width>
@@ -22,7 +22,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;INICIO DEL RANGO DE DIAS MORA&apos;, &apos;FIN DEL RANGO DE DIAS MORA&apos;]</header>
+      <header>Converted from [&apos;TIPO ORO&apos;]</header>
       <constraintValueType>1</constraintValueType>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
@@ -30,13 +30,13 @@
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 <value>param1</value>
-                <operator>&gt;=</operator>
+                <operator>==</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
                 </expression>
-                <factType>Cliente</factType>
+                <factType>Garantia</factType>
                 <fieldType>String</fieldType>
                 <expLeftSide>
                   <parts>
@@ -45,54 +45,18 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getDiasMoraPromedio()</name>
+                          <name>getTipoOroKilataje()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
-                        <name>cliente</name>
-                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <name>garantia</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Garantia</classType>
                         <genericType>this</genericType>
                       </next>
-                      <name>Cliente</name>
-                      <classType>Cliente</classType>
-                      <genericType>Cliente</genericType>
-                      <factType>Cliente</factType>
-                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
-                  </parts>
-                  <index>2147483647</index>
-                </expLeftSide>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                <value>param2</value>
-                <operator>&lt;=</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <factType>Cliente</factType>
-                <fieldType>String</fieldType>
-                <expLeftSide>
-                  <parts>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
-                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getDiasMoraPromedio()</name>
-                          <classType>java.lang.String</classType>
-                          <genericType>String</genericType>
-                        </next>
-                        <name>cliente</name>
-                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
-                        <genericType>this</genericType>
-                      </next>
-                      <name>Cliente</name>
-                      <classType>Cliente</classType>
-                      <genericType>Cliente</genericType>
-                      <factType>Cliente</factType>
+                      <name>Garantia</name>
+                      <classType>Garantia</classType>
+                      <genericType>Garantia</genericType>
+                      <factType>Garantia</factType>
                     </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
                     <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
                     <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
@@ -102,8 +66,8 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
             </constraints>
           </constraintList>
-          <factType>Cliente</factType>
-          <boundName>cliente</boundName>
+          <factType>Garantia</factType>
+          <boundName>garantia</boundName>
           <isNegated>false</isNegated>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
       </definition>
@@ -111,22 +75,12 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>INICIO DEL RANGO DE DIAS MORA</header>
+          <header>TIPO ORO</header>
           <constraintValueType>1</constraintValueType>
-          <factField>getDiasMoraPromedio()</factField>
+          <factField>getTipoOroKilataje()</factField>
           <fieldType>String</fieldType>
           <varName>param1</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>FIN DEL RANGO DE DIAS MORA</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>getDiasMoraPromedio()</factField>
-          <fieldType>String</fieldType>
-          <varName>param2</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Garantia</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
@@ -135,29 +89,29 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;PUNTUACION DIAS DE MORA PROMEDIO&apos;]</header>
+      <header>Converted from [&apos;LEY&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>diasMoraPromedio</field>
-              <value>param3</value>
+              <field>valorAvaluo</field>
+              <value>param2</value>
               <nature>7</nature>
               <type>Numeric</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
-          <variable>cliente</variable>
+          <variable>garantia</variable>
         </org.drools.workbench.models.datamodel.rule.ActionSetField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>PUNTUACION DIAS DE MORA PROMEDIO</header>
-          <varName>param3</varName>
+          <header>LEY</header>
+          <varName>param2</varName>
           <fieldType>Numeric</fieldType>
-          <factType>Cliente</factType>
-          <factField>diasMoraPromedio</factField>
+          <factType>Garantia</factType>
+          <factField>valorAvaluo</factField>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -165,7 +119,7 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Garantia</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
@@ -180,27 +134,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>PUNTAJE DE DIAS MORA PROMEDIO</valueString>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoScoreClienteInterno</valueString>
+        <valueString>GrupoPrecio</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>31</valueString>
+        <valueString>24K</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>45</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>50</valueNumeric>
+        <valueNumeric>24</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -212,27 +161,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>PUNTAJE DE DIAS MORA PROMEDIO</valueString>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoScoreClienteInterno</valueString>
+        <valueString>GrupoPrecio</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>16</valueString>
+        <valueString>22K</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>30</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>150</valueNumeric>
+        <valueNumeric>22</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -244,27 +188,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>PUNTAJE DE DIAS MORA PROMEDIO</valueString>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoScoreClienteInterno</valueString>
+        <valueString>GrupoPrecio</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6</valueString>
+        <valueString>21K</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>15</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>300</valueNumeric>
+        <valueNumeric>21</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -276,27 +215,184 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>PUNTAJE DE DIAS MORA PROMEDIO</valueString>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoScoreClienteInterno</valueString>
+        <valueString>GrupoPrecio</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>18KIT</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>5</valueString>
+        <valueNumeric>18.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">5</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>300</valueNumeric>
+        <valueString>GrupoPrecio</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18K</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>18</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">6</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPrecio</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18KB</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>16</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">7</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPrecio</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18KN</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>17</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">8</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPrecio</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>14K</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>14</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">9</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPrecio</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>14KB</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>12</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">10</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR LEY PARA EL CALCULO DE PRECIO DE LA PRENDA</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPrecio</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>ALM</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>7</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

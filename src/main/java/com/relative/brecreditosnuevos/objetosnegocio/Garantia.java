@@ -27,8 +27,6 @@ public class Garantia extends Object implements java.io.Serializable {
 	Double DescuentoPesoPiedras;
 	@org.kie.api.definition.type.Label("PesoNeto")
 	Double PesoNeto;
-	@org.kie.api.definition.type.Label("PrecioOro")
-	Double PrecioOro;
 	@org.kie.api.definition.type.Label("ValorAplicableCredito")
 	Double ValorAplicableCredito;
 	@org.kie.api.definition.type.Label("ValorRealizacion")
@@ -37,6 +35,11 @@ public class Garantia extends Object implements java.io.Serializable {
 	int NumeroPiezas;
 	@org.kie.api.definition.type.Label("DescuentoSuelda")
 	Double DescuentoSuelda;
+
+	@org.kie.api.definition.type.Label(value = "ValorOro")
+	private java.lang.Double valorOro;
+	@org.kie.api.definition.type.Label(value = "ValorAvaluo")
+	private java.lang.Double valorAvaluo;
 
 	public Garantia() {
 	}
@@ -73,10 +76,6 @@ public class Garantia extends Object implements java.io.Serializable {
 
 	public Double getPesoNeto() {
 		return PesoNeto;
-	}
-
-	public Double getPrecioOro() {
-		return PrecioOro;
 	}
 
 	public Double getValorAplicableCredito() {
@@ -128,10 +127,6 @@ public class Garantia extends Object implements java.io.Serializable {
 		this.PesoNeto = PesoNeto;
 	}
 
-	public void setPrecioOro(Double PrecioOro) {
-		this.PrecioOro = PrecioOro;
-	}
-
 	public void setValorAplicableCredito(Double ValorAplicableCredito) {
 		this.ValorAplicableCredito = ValorAplicableCredito;
 	}
@@ -156,14 +151,31 @@ public class Garantia extends Object implements java.io.Serializable {
 		this.TienePiedras = TienePiedras;
 	}
 
+	public java.lang.Double getValorOro() {
+		return this.valorOro;
+	}
+
+	public void setValorOro(java.lang.Double valorOro) {
+		this.valorOro = valorOro;
+	}
+
+	public java.lang.Double getValorAvaluo() {
+		return this.valorAvaluo;
+	}
+
+	public void setValorAvaluo(java.lang.Double valorAvaluo) {
+		this.valorAvaluo = valorAvaluo;
+	}
+
 	public Garantia(java.lang.String TipoJoya, java.lang.String Descripcion,
 			java.lang.String EstadoJoya, java.lang.String TipoOroKilataje,
 			java.lang.Double PesoGr, java.lang.String TienePiedras,
 			java.lang.String DetallePiedras,
 			java.lang.Double DescuentoPesoPiedras, java.lang.Double PesoNeto,
-			java.lang.Double PrecioOro, java.lang.Double ValorAplicableCredito,
+			java.lang.Double ValorAplicableCredito,
 			java.lang.Double ValorRealizacion, int NumeroPiezas,
-			java.lang.Double DescuentoSuelda) {
+			java.lang.Double DescuentoSuelda, java.lang.Double valorOro,
+			java.lang.Double valorAvaluo) {
 		this.TipoJoya = TipoJoya;
 		this.Descripcion = Descripcion;
 		this.EstadoJoya = EstadoJoya;
@@ -173,10 +185,11 @@ public class Garantia extends Object implements java.io.Serializable {
 		this.DetallePiedras = DetallePiedras;
 		this.DescuentoPesoPiedras = DescuentoPesoPiedras;
 		this.PesoNeto = PesoNeto;
-		this.PrecioOro = PrecioOro;
 		this.ValorAplicableCredito = ValorAplicableCredito;
 		this.ValorRealizacion = ValorRealizacion;
 		this.NumeroPiezas = NumeroPiezas;
 		this.DescuentoSuelda = DescuentoSuelda;
+		this.valorOro = valorOro;
+		this.valorAvaluo = valorAvaluo;
 	}
 }

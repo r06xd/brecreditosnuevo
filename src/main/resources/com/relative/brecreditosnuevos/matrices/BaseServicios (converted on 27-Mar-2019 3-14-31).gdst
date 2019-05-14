@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>ColateralClientesInternos</tableName>
+  <tableName>BaseServicios</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>-1</width>
@@ -22,7 +22,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;CALIFICACION WEB MUPI&apos;, &apos;PERFIL  DEL CLIENTE INTERNO&apos;]</header>
+      <header>Converted from [&apos;TIPO CREDITO&apos;, &apos;PLAZO&apos;]</header>
       <constraintValueType>1</constraintValueType>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
@@ -36,7 +36,7 @@
                   <parts/>
                   <index>2147483647</index>
                 </expression>
-                <factType>Cliente</factType>
+                <factType>Opcion</factType>
                 <fieldType>String</fieldType>
                 <expLeftSide>
                   <parts>
@@ -45,18 +45,18 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getCalificacionWebMupi()</name>
+                          <name>getPeriodoPlazo()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
-                        <name>cliente</name>
-                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <name>opcion</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</classType>
                         <genericType>this</genericType>
                       </next>
-                      <name>Cliente</name>
-                      <classType>Cliente</classType>
-                      <genericType>Cliente</genericType>
-                      <factType>Cliente</factType>
+                      <name>Opcion</name>
+                      <classType>Opcion</classType>
+                      <genericType>Opcion</genericType>
+                      <factType>Opcion</factType>
                     </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
                     <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
                     <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
@@ -72,7 +72,7 @@
                   <parts/>
                   <index>2147483647</index>
                 </expression>
-                <factType>Cliente</factType>
+                <factType>Opcion</factType>
                 <fieldType>String</fieldType>
                 <expLeftSide>
                   <parts>
@@ -81,18 +81,18 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getPerfilInterno()</name>
+                          <name>getPlazo()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
-                        <name>cliente</name>
-                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <name>opcion</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</classType>
                         <genericType>this</genericType>
                       </next>
-                      <name>Cliente</name>
-                      <classType>Cliente</classType>
-                      <genericType>Cliente</genericType>
-                      <factType>Cliente</factType>
+                      <name>Opcion</name>
+                      <classType>Opcion</classType>
+                      <genericType>Opcion</genericType>
+                      <factType>Opcion</factType>
                     </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
                     <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
                     <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
@@ -102,8 +102,8 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
             </constraints>
           </constraintList>
-          <factType>Cliente</factType>
-          <boundName>cliente</boundName>
+          <factType>Opcion</factType>
+          <boundName>opcion</boundName>
           <isNegated>false</isNegated>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
       </definition>
@@ -111,22 +111,22 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>CALIFICACION WEB MUPI</header>
+          <header>TIPO CREDITO</header>
           <constraintValueType>1</constraintValueType>
-          <factField>getCalificacionWebMupi()</factField>
+          <factField>getPeriodoPlazo()</factField>
           <fieldType>String</fieldType>
           <varName>param1</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>PERFIL  DEL CLIENTE INTERNO</header>
+          <header>PLAZO</header>
           <constraintValueType>1</constraintValueType>
-          <factField>getPerfilInterno()</factField>
+          <factField>getPlazo()</factField>
           <fieldType>String</fieldType>
           <varName>param2</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
@@ -135,44 +135,138 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;VALOR COLATERAL&apos;, &apos;CATEGORIA DEL CLIENTE INTERNO&apos;]</header>
+      <header>Converted from [&apos;SEGURO&apos;, &apos;SEGURO&apos;]</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>auxSeguros = Double.valueOf(@{param3}) * Double.valueOf(@{param4});</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>SEGURO</header>
+          <varName>param3</varName>
+          <fieldType>Object</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>SEGURO</header>
+          <varName>param4</varName>
+          <fieldType>Object</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Converted from [&apos;SEGUROM4&apos;, &apos;SEGUROM4&apos;]</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>auxSegurosM4 = Double.valueOf(@{param5}) * Double.valueOf(@{param6});</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>SEGUROM4</header>
+          <varName>param5</varName>
+          <fieldType>Object</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>SEGUROM4</header>
+          <varName>param6</varName>
+          <fieldType>Object</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Converted from [&apos;TASACION&apos;, &apos;CUSTODIA&apos;, &apos;TRANSPORTE&apos;, &apos;RESGUARDO&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>colateral</field>
-              <value>param3</value>
+              <field>costoTasacion</field>
+              <value>param7</value>
               <nature>7</nature>
               <type>Numeric</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>categoria</field>
-              <value>param4</value>
+              <field>costoCustodia</field>
+              <value>param8</value>
               <nature>7</nature>
-              <type>String</type>
+              <type>Numeric</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>costoTransporte</field>
+              <value>param9</value>
+              <nature>7</nature>
+              <type>Numeric</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>costoFideicomiso</field>
+              <value>param10</value>
+              <nature>7</nature>
+              <type>Numeric</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>costoSeguro</field>
+              <value>auxSeguros</value>
+              <nature>3</nature>
+              <type>Numeric</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>costoValoracion</field>
+              <value>auxSegurosM4</value>
+              <nature>3</nature>
+              <type>Numeric</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
-          <variable>cliente</variable>
+          <variable>opcion</variable>
         </org.drools.workbench.models.datamodel.rule.ActionSetField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>VALOR COLATERAL</header>
-          <varName>param3</varName>
+          <header>TASACION</header>
+          <varName>param7</varName>
           <fieldType>Numeric</fieldType>
-          <factType>Cliente</factType>
-          <factField>colateral</factField>
+          <factType>Opcion</factType>
+          <factField>costoTasacion</factField>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>CATEGORIA DEL CLIENTE INTERNO</header>
-          <varName>param4</varName>
-          <fieldType>String</fieldType>
-          <factType>Cliente</factType>
-          <factField>categoria</factField>
+          <header>CUSTODIA</header>
+          <varName>param8</varName>
+          <fieldType>Numeric</fieldType>
+          <factType>Opcion</factType>
+          <factField>costoCustodia</factField>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>TRANSPORTE</header>
+          <varName>param9</varName>
+          <fieldType>Numeric</fieldType>
+          <factType>Opcion</factType>
+          <factField>costoTransporte</factField>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>RESGUARDO</header>
+          <varName>param10</varName>
+          <fieldType>Numeric</fieldType>
+          <factType>Opcion</factType>
+          <factField>costoFideicomiso</factField>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -180,7 +274,7 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
@@ -195,33 +289,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>S</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Q1</valueString>
+        <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>80</valueNumeric>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>2.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>2.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3.6</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric>4.18</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -232,33 +356,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>S</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Q2</valueString>
+        <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>80</valueNumeric>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>3.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>3.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3.6</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric>5.25</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -269,33 +423,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>S</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Q3</valueString>
+        <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>80</valueNumeric>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>4.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>4.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3.6</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric>6.8</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -306,33 +490,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>S</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Q4</valueString>
+        <valueString>6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>80</valueNumeric>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3.6</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric>10.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -343,33 +557,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>S</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Q5</valueString>
+        <valueString>7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>105</valueNumeric>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>7.7</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B+</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric>12.95</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -380,33 +624,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>S</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q6</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>120</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>C</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3.6</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>12.25</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -417,33 +691,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>S</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q7</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>120</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>C</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>7.15</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>21.45</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -454,33 +758,63 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>S</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q8</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>120</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>C</valueString>
         <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3.6</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>16.00</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0.5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -491,287 +825,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>VALOR BASE SERVICIOS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>GrupoServicios</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>S</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q9</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>125</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">10</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>S</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q10</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>125</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">11</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>80</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">12</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q2</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>80</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">13</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q3</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>80</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">14</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q4</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>80</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>AAA</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">15</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q5</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>105</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>B+</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">16</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q6</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>120</valueNumeric>
-        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -779,152 +839,49 @@
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
-    </list>
-    <list>
       <value>
-        <valueNumeric class="int">17</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
+        <valueString>18</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
+        <valueString>0.31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>N</valueString>
+        <valueString>18.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Q7</valueString>
+        <valueString>0.06</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>120</valueNumeric>
+        <valueString>18.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3.6</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">18</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q8</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>120</valueNumeric>
+        <valueNumeric>19.5</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">19</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q9</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>125</valueNumeric>
+        <valueNumeric>0.5</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">20</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR COLATERAL Y CATEGORIA CLIENTE INTERNO</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoValorColateralClienteInterno</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>N</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Q10</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric>125</valueNumeric>
+        <valueNumeric>0.5</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>

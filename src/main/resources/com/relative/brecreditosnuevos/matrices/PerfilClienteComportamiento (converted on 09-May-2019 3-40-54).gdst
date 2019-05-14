@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>SegurosTerceraEdad</tableName>
+  <tableName>PerfilClienteComportamiento</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>-1</width>
@@ -22,7 +22,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;PLAZO&apos;]</header>
+      <header>Converted from [&apos;INICIO RANGO TIEMPO CANCELADO&apos;, &apos;FIN RANGO TIEMPO CANCELADO&apos;, &apos;INICIO DEL RANGO DEL SCORE COMPORTAMIENTO&apos;, &apos;FIN DEL RANGO DE SCORE COMPORTAMIENTO&apos;, &apos;INICIO RANGO MORA PROMEDIO&apos;, &apos;FIN RANGO MORA PROMEDIO&apos;, &apos;INICIO MORA MAXIMA&apos;, &apos;FIN MORA MAXIMA&apos;]</header>
       <constraintValueType>1</constraintValueType>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
@@ -30,13 +30,13 @@
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 <value>param1</value>
-                <operator>==</operator>
+                <operator>&gt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
                 </expression>
-                <factType>Opcion</factType>
+                <factType>Cliente</factType>
                 <fieldType>String</fieldType>
                 <expLeftSide>
                   <parts>
@@ -45,18 +45,18 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getPlazo()</name>
+                          <name>getTiempoCancelacion()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
-                        <name>opcion</name>
-                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</classType>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
                         <genericType>this</genericType>
                       </next>
-                      <name>Opcion</name>
-                      <classType>Opcion</classType>
-                      <genericType>Opcion</genericType>
-                      <factType>Opcion</factType>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
                     </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
                     <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
                     <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
@@ -64,44 +64,16 @@
                   <index>2147483647</index>
                 </expLeftSide>
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            </constraints>
-          </constraintList>
-          <factType>Opcion</factType>
-          <boundName>opcion</boundName>
-          <isNegated>false</isNegated>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>PLAZO</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>getPlazo()</factField>
-          <fieldType>String</fieldType>
-          <varName>param1</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</factType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;AÑO MINIMO EN MESES&apos;, &apos;AÑO MAXIMO EN MESES&apos;]</header>
-      <constraintValueType>1</constraintValueType>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <constraintList>
-            <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 <value>param2</value>
-                <operator>&gt;=</operator>
+                <operator>&lt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
                 </expression>
                 <factType>Cliente</factType>
+                <fieldType>String</fieldType>
                 <expLeftSide>
                   <parts>
                     <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
@@ -109,7 +81,7 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getMonths()</name>
+                          <name>getTiempoCancelacion()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
@@ -130,13 +102,14 @@
               </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 <value>param3</value>
-                <operator>&lt;=</operator>
+                <operator>&gt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
                   <index>2147483647</index>
                 </expression>
                 <factType>Cliente</factType>
+                <fieldType>String</fieldType>
                 <expLeftSide>
                   <parts>
                     <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
@@ -144,7 +117,187 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getMonths()</name>
+                          <name>getScoreComportamiento()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param4</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <fieldType>String</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getScoreComportamiento()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param5</value>
+                <operator>&gt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <fieldType>String</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getDiasMoraPromedio()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param6</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <fieldType>String</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getDiasMoraPromedio()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param7</value>
+                <operator>&gt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <fieldType>String</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getDiasMoraMaximo()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param8</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <fieldType>String</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getDiasMoraMaximo()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
@@ -174,9 +327,19 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>AÑO MINIMO EN MESES</header>
+          <header>INICIO RANGO TIEMPO CANCELADO</header>
           <constraintValueType>1</constraintValueType>
-          <factField>getMonths()</factField>
+          <factField>getTiempoCancelacion()</factField>
+          <fieldType>String</fieldType>
+          <varName>param1</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>FIN RANGO TIEMPO CANCELADO</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getTiempoCancelacion()</factField>
           <fieldType>String</fieldType>
           <varName>param2</varName>
           <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
@@ -184,11 +347,61 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>AÑO MAXIMO EN MESES</header>
+          <header>INICIO DEL RANGO DEL SCORE COMPORTAMIENTO</header>
           <constraintValueType>1</constraintValueType>
-          <factField>getMonths()</factField>
+          <factField>getScoreComportamiento()</factField>
           <fieldType>String</fieldType>
           <varName>param3</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>FIN DEL RANGO DE SCORE COMPORTAMIENTO</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getScoreComportamiento()</factField>
+          <fieldType>String</fieldType>
+          <varName>param4</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>INICIO RANGO MORA PROMEDIO</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getDiasMoraPromedio()</factField>
+          <fieldType>String</fieldType>
+          <varName>param5</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>FIN RANGO MORA PROMEDIO</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getDiasMoraPromedio()</factField>
+          <fieldType>String</fieldType>
+          <varName>param6</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>INICIO MORA MAXIMA</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getDiasMoraMaximo()</factField>
+          <fieldType>String</fieldType>
+          <varName>param7</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>FIN MORA MAXIMA</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getDiasMoraMaximo()</factField>
+          <fieldType>String</fieldType>
+          <varName>param8</varName>
           <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
@@ -198,94 +411,35 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;SEGURO&apos;, &apos;SEGURO&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxSeguros = Double.valueOf(@{param4}) * Double.valueOf(@{param5});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>SEGURO</header>
-          <varName>param4</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>SEGURO</header>
-          <varName>param5</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;SEGUROM4&apos;, &apos;SEGUROM4&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxSegurosM4 = Double.valueOf(@{param6}) * Double.valueOf(@{param7});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>SEGUROM4</header>
-          <varName>param6</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>SEGUROM4</header>
-          <varName>param7</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;SEGURO&apos;]</header>
+      <header>Converted from [&apos;PERFIL&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>costoSeguro</field>
-              <value>auxSeguros</value>
-              <nature>3</nature>
-              <type>Numeric</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>costoValoracion</field>
-              <value>auxSegurosM4</value>
-              <nature>3</nature>
+              <field>perfilComportamiento</field>
+              <value>param9</value>
+              <nature>7</nature>
               <type>Numeric</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
-          <variable>opcion</variable>
+          <variable>cliente</variable>
         </org.drools.workbench.models.datamodel.rule.ActionSetField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>SEGURO</header>
-          <varName></varName>
-          <fieldType>Boolean</fieldType>
+          <header>PERFIL</header>
+          <varName>param9</varName>
+          <fieldType>Numeric</fieldType>
+          <factType>Cliente</factType>
+          <factField>perfilComportamiento</factField>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
   </actionCols>
   <imports>
     <imports>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
-      </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
       </org.kie.soup.project.datamodel.imports.Import>
@@ -302,53 +456,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>864</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>882</valueString>
+        <valueString>969</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.72</valueString>
+        <valueString>999</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.22</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -359,53 +518,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>864</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>882</valueString>
+        <valueString>915</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.08</valueString>
+        <valueString>968</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.36</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>2</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -416,53 +580,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>864</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>882</valueString>
+        <valueString>854</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.44</valueString>
+        <valueString>914</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.44</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -473,53 +642,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>864</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>882</valueString>
+        <valueString>736</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.00</valueString>
+        <valueString>853</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.00</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>4</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -530,53 +704,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>864</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>882</valueString>
+        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.24</valueString>
+        <valueString>735</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.99</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -587,53 +766,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>864</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>882</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.32</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.32</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -644,53 +828,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>864</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>882</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.48</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.98</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>6</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -701,53 +890,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>883</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>888</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.72</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.22</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>7</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -758,53 +952,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>883</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>888</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.08</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.36</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>8</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -815,53 +1014,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>883</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>888</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.44</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.44</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>9</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -872,53 +1076,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>883</valueString>
+        <valueString>119</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>888</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.00</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.00</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>10</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -929,53 +1138,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>883</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>888</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.24</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9.0</valueString>
+        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.99</valueString>
+        <valueString>5</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9.0</valueString>
+        <valueString>1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>10</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>1</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -986,53 +1200,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>883</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>888</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.32</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12.0</valueString>
+        <valueString>6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.32</valueString>
+        <valueString>15</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12.0</valueString>
+        <valueString>11</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>30</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>2</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1043,53 +1262,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>883</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>888</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.48</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18.0</valueString>
+        <valueString>16</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.98</valueString>
+        <valueString>30</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18.0</valueString>
+        <valueString>31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>60</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1100,53 +1324,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>900</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1199</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.62</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2.0</valueString>
+        <valueString>31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.12</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2.0</valueString>
+        <valueString>31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>60</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>4</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1157,53 +1386,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>900</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1199</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.93</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.0</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.18</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.0</valueString>
+        <valueString>60</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>5</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1214,53 +1448,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>900</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1199</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.24</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.0</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.24</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>4.0</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>0</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1271,53 +1510,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>900</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1199</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.00</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.00</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>6.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>6</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1328,53 +1572,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>900</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1199</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2.79</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.54</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>9.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>7</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1385,53 +1634,58 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>900</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1199</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3.72</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0.72</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>8</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -1442,53 +1696,120 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18</valueString>
+        <valueString>120</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>900</valueString>
+        <valueString>365</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1199</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>5.58</valueString>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.08</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>18.0</valueString>
+        <valueString>-1</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>9</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">22</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE COMPORTAMIENTO</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPerfilClienteComportamiento</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>120</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>365</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>10</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>

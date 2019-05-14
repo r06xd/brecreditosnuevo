@@ -50,8 +50,20 @@ public class VariablesInternas implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Permanencia")
 	private java.lang.Integer permanencia;
 
-	@org.kie.api.definition.type.Label(value = "RiesgoAcumulado")
+	@org.kie.api.definition.type.Label("RiesgoAcumulado")
 	private java.lang.Double riesgoAcumulado;
+
+	@org.kie.api.definition.type.Label("ScoreComportamiento")
+	private java.lang.Integer scoreComportamiento;
+
+	@org.kie.api.definition.type.Label("CarteraCastigada")
+	private java.lang.Double carteraCastigada;
+
+	@org.kie.api.definition.type.Label("CVencida90D")
+	private java.lang.Double cVencida90D;
+
+	@org.kie.api.definition.type.Label(value = "TiempoCancelacion")
+	private java.lang.Integer tiempoCancelacion;
 
 	public VariablesInternas() {
 	}
@@ -176,6 +188,38 @@ public class VariablesInternas implements java.io.Serializable {
 		this.riesgoAcumulado = riesgoAcumulado;
 	}
 
+	public java.lang.Integer getScoreComportamiento() {
+		return this.scoreComportamiento;
+	}
+
+	public void setScoreComportamiento(java.lang.Integer scoreComportamiento) {
+		this.scoreComportamiento = scoreComportamiento;
+	}
+
+	public java.lang.Double getCarteraCastigada() {
+		return this.carteraCastigada;
+	}
+
+	public void setCarteraCastigada(java.lang.Double carteraCastigada) {
+		this.carteraCastigada = carteraCastigada;
+	}
+
+	public java.lang.Double getcVencida90D() {
+		return this.cVencida90D;
+	}
+
+	public void setcVencida90D(java.lang.Double cVencida90D) {
+		this.cVencida90D = cVencida90D;
+	}
+
+	public java.lang.Integer getTiempoCancelacion() {
+		return this.tiempoCancelacion;
+	}
+
+	public void setTiempoCancelacion(java.lang.Integer tiempoCancelacion) {
+		this.tiempoCancelacion = tiempoCancelacion;
+	}
+
 	public VariablesInternas(java.lang.String TipoCliente,
 			java.lang.Integer moraPromedio, java.lang.Integer moraMaximo,
 			java.lang.Integer cantidadCreditos,
@@ -185,7 +229,10 @@ public class VariablesInternas implements java.io.Serializable {
 			java.lang.String impagoQuski, java.lang.String clienteBloqueado,
 			java.lang.String vinculadoQuski, java.lang.Integer totalCreditos,
 			java.lang.String carteraCliente, java.lang.Integer permanencia,
-			java.lang.Double riesgoAcumulado) {
+			java.lang.Double riesgoAcumulado,
+			java.lang.Integer scoreComportamiento,
+			java.lang.Double carteraCastigada, java.lang.Double cVencida90D,
+			java.lang.Integer tiempoCancelacion) {
 		this.TipoCliente = TipoCliente;
 		this.moraPromedio = moraPromedio;
 		this.moraMaximo = moraMaximo;
@@ -201,6 +248,10 @@ public class VariablesInternas implements java.io.Serializable {
 		this.carteraCliente = carteraCliente;
 		this.permanencia = permanencia;
 		this.riesgoAcumulado = riesgoAcumulado;
+		this.scoreComportamiento = scoreComportamiento;
+		this.carteraCastigada = carteraCastigada;
+		this.cVencida90D = cVencida90D;
+		this.tiempoCancelacion = tiempoCancelacion;
 	}
 
 }

@@ -16,14 +16,8 @@ public class VariablesNegocio implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("PrecioGramo")
 	private java.lang.Double precioGramo;
 
-	@org.kie.api.definition.type.Label("Mensaje")
-	private java.lang.String mensaje;
-
 	@org.kie.api.definition.type.Label("Detener")
 	private java.lang.Boolean detener;
-
-	@org.kie.api.definition.type.Label("TotalServicios")
-	private java.lang.Double totalServicios;
 
 	@org.kie.api.definition.type.Label("PerfilInternoNuerico")
 	private java.lang.Integer perfilInternoNuerico;
@@ -52,8 +46,20 @@ public class VariablesNegocio implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("CodigoPolitica")
 	private java.util.List<java.lang.String> codigoPolitica;
 
-	@org.kie.api.definition.type.Label(value = "Total Precio Oro")
+	@org.kie.api.definition.type.Label("Total Precio Oro")
 	private java.lang.Double totalPrecioOro;
+
+	@org.kie.api.definition.type.Label("CodigoError")
+	private java.lang.String codigoError;
+
+	@org.kie.api.definition.type.Label("Mensaje")
+	private java.lang.String mensaje;
+
+	@org.kie.api.definition.type.Label("TotalServiciosCapitalizados")
+	private java.lang.Double totalServiciosCapitalizados;
+
+	@org.kie.api.definition.type.Label(value = "TotalServiciosDiferidos")
+	private java.lang.Double totalServiciosDiferidos;
 
 	public VariablesNegocio() {
 	}
@@ -82,28 +88,12 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.precioGramo = precioGramo;
 	}
 
-	public java.lang.String getMensaje() {
-		return this.mensaje;
-	}
-
-	public void setMensaje(java.lang.String mensaje) {
-		this.mensaje = mensaje;
-	}
-
 	public java.lang.Boolean getDetener() {
 		return this.detener;
 	}
 
 	public void setDetener(java.lang.Boolean detener) {
 		this.detener = detener;
-	}
-
-	public java.lang.Double getTotalServicios() {
-		return this.totalServicios;
-	}
-
-	public void setTotalServicios(java.lang.Double totalServicios) {
-		this.totalServicios = totalServicios;
 	}
 
 	public java.lang.Integer getPerfilInternoNuerico() {
@@ -188,11 +178,43 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.totalPrecioOro = totalPrecioOro;
 	}
 
+	public java.lang.String getCodigoError() {
+		return this.codigoError;
+	}
+
+	public void setCodigoError(java.lang.String codigoError) {
+		this.codigoError = codigoError;
+	}
+
+	public java.lang.String getMensaje() {
+		return this.mensaje;
+	}
+
+	public void setMensaje(java.lang.String mensaje) {
+		this.mensaje = mensaje;
+	}
+
+	public java.lang.Double getTotalServiciosCapitalizados() {
+		return this.totalServiciosCapitalizados;
+	}
+
+	public void setTotalServiciosCapitalizados(
+			java.lang.Double totalServiciosCapitalizados) {
+		this.totalServiciosCapitalizados = totalServiciosCapitalizados;
+	}
+
+	public java.lang.Double getTotalServiciosDiferidos() {
+		return this.totalServiciosDiferidos;
+	}
+
+	public void setTotalServiciosDiferidos(
+			java.lang.Double totalServiciosDiferidos) {
+		this.totalServiciosDiferidos = totalServiciosDiferidos;
+	}
+
 	public VariablesNegocio(java.lang.Double totalGarantia,
 			java.lang.Double totalPeso, java.lang.Double precioGramo,
-			java.lang.String mensaje, java.lang.Boolean detener,
-			java.lang.Double totalServicios,
-			java.lang.Integer perfilInternoNuerico,
+			java.lang.Boolean detener, java.lang.Integer perfilInternoNuerico,
 			java.lang.Boolean detenerColateral,
 			java.lang.Boolean detenerColateralAdicional,
 			java.lang.String mensajeBloqueo,
@@ -200,13 +222,14 @@ public class VariablesNegocio implements java.io.Serializable {
 			java.lang.String mensajeImpagoQuski,
 			java.lang.String codigoPoliticaBloqueo, java.lang.String politica,
 			java.util.List<java.lang.String> codigoPolitica,
-			java.lang.Double totalPrecioOro) {
+			java.lang.Double totalPrecioOro, java.lang.String codigoError,
+			java.lang.String mensaje,
+			java.lang.Double totalServiciosCapitalizados,
+			java.lang.Double totalServiciosDiferidos) {
 		this.totalGarantia = totalGarantia;
 		this.totalPeso = totalPeso;
 		this.precioGramo = precioGramo;
-		this.mensaje = mensaje;
 		this.detener = detener;
-		this.totalServicios = totalServicios;
 		this.perfilInternoNuerico = perfilInternoNuerico;
 		this.detenerColateral = detenerColateral;
 		this.detenerColateralAdicional = detenerColateralAdicional;
@@ -217,6 +240,10 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.politica = politica;
 		this.codigoPolitica = codigoPolitica;
 		this.totalPrecioOro = totalPrecioOro;
+		this.codigoError = codigoError;
+		this.mensaje = mensaje;
+		this.totalServiciosCapitalizados = totalServiciosCapitalizados;
+		this.totalServiciosDiferidos = totalServiciosDiferidos;
 	}
 
 }

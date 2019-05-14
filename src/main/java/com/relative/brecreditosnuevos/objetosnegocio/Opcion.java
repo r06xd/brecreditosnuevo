@@ -68,6 +68,20 @@ public class Opcion implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("TotalCostosOperacionAnterior")
 	private Double TotalCostosOperacionAnterior;
 
+	@org.kie.api.definition.type.Label("CustodiaDevengada")
+	private java.lang.Double custodiaDevengada;
+	@org.kie.api.definition.type.Label("FormaPagoCustodiaDevengada")
+	private java.lang.String formaPagoCustodiaDevengada;
+
+	@org.kie.api.definition.type.Label("TIPO_OFERTA")
+	private java.lang.String TIPO_OFERTA;
+	@org.kie.api.definition.type.Label("PORCENTAJE_FLUJO_PLANEADO")
+	private Integer PORCENTAJE_FLUJO_PLANEADO;
+	@org.kie.api.definition.type.Label("DIVIDENDO_FLUJO_PLANEADO")
+	private Integer DIVIDENDO_FLUJO_PLANEADO;
+	@org.kie.api.definition.type.Label("DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO")
+	private String DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO;
+
 	public Opcion() {
 	}
 
@@ -316,6 +330,58 @@ public class Opcion implements java.io.Serializable {
 		this.TotalCostosOperacionAnterior = TotalCostosOperacionAnterior;
 	}
 
+	public java.lang.Double getCustodiaDevengada() {
+		return this.custodiaDevengada;
+	}
+
+	public void setCustodiaDevengada(java.lang.Double custodiaDevengada) {
+		this.custodiaDevengada = custodiaDevengada;
+	}
+
+	public java.lang.String getFormaPagoCustodiaDevengada() {
+		return this.formaPagoCustodiaDevengada;
+	}
+
+	public void setFormaPagoCustodiaDevengada(
+			java.lang.String formaPagoCustodiaDevengada) {
+		this.formaPagoCustodiaDevengada = formaPagoCustodiaDevengada;
+	}
+
+	public java.lang.String getTIPO_OFERTA() {
+		return this.TIPO_OFERTA;
+	}
+
+	public void setTIPO_OFERTA(java.lang.String TIPO_OFERTA) {
+		this.TIPO_OFERTA = TIPO_OFERTA;
+	}
+
+	public java.lang.Integer getDIVIDENDO_FLUJO_PLANEADO() {
+		return this.DIVIDENDO_FLUJO_PLANEADO;
+	}
+
+	public void setDIVIDENDO_FLUJO_PLANEADO(
+			java.lang.Integer DIVIDENDO_FLUJO_PLANEADO) {
+		this.DIVIDENDO_FLUJO_PLANEADO = DIVIDENDO_FLUJO_PLANEADO;
+	}
+
+	public java.lang.Integer getPORCENTAJE_FLUJO_PLANEADO() {
+		return this.PORCENTAJE_FLUJO_PLANEADO;
+	}
+
+	public void setPORCENTAJE_FLUJO_PLANEADO(
+			java.lang.Integer PORCENTAJE_FLUJO_PLANEADO) {
+		this.PORCENTAJE_FLUJO_PLANEADO = PORCENTAJE_FLUJO_PLANEADO;
+	}
+
+	public java.lang.String getDIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO() {
+		return this.DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO;
+	}
+
+	public void setDIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO(
+			java.lang.String DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO) {
+		this.DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO = DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO;
+	}
+
 	public Opcion(java.lang.Integer Plazo, java.lang.String PeriodoPlazo,
 			java.lang.String PeriodicidadPlazo,
 			java.lang.Double MontoFinanciado, java.lang.Double ValorARecibir,
@@ -337,7 +403,13 @@ public class Opcion implements java.io.Serializable {
 			java.lang.Double SaldoCapitalRenov,
 			java.lang.Double MontoPrevioDesembolso,
 			java.lang.Double TotalGastosNuevaOperacion,
-			java.lang.Double TotalCostosOperacionAnterior) {
+			java.lang.Double TotalCostosOperacionAnterior,
+			java.lang.Double custodiaDevengada,
+			java.lang.String formaPagoCustodiaDevengada,
+			java.lang.String TIPO_OFERTA,
+			java.lang.Integer PORCENTAJE_FLUJO_PLANEADO,
+			java.lang.Integer DIVIDENDO_FLUJO_PLANEADO,
+			java.lang.String DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO) {
 		this.Plazo = Plazo;
 		this.PeriodoPlazo = PeriodoPlazo;
 		this.PeriodicidadPlazo = PeriodicidadPlazo;
@@ -368,5 +440,11 @@ public class Opcion implements java.io.Serializable {
 		this.MontoPrevioDesembolso = MontoPrevioDesembolso;
 		this.TotalGastosNuevaOperacion = TotalGastosNuevaOperacion;
 		this.TotalCostosOperacionAnterior = TotalCostosOperacionAnterior;
+		this.custodiaDevengada = custodiaDevengada;
+		this.formaPagoCustodiaDevengada = formaPagoCustodiaDevengada;
+		this.TIPO_OFERTA = TIPO_OFERTA;
+		this.PORCENTAJE_FLUJO_PLANEADO = PORCENTAJE_FLUJO_PLANEADO;
+		this.DIVIDENDO_FLUJO_PLANEADO = DIVIDENDO_FLUJO_PLANEADO;
+		this.DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO = DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO;
 	}
 }

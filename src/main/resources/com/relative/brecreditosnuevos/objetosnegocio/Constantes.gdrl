@@ -20,3 +20,6 @@ global java.lang.String CodigoErrorSinCredito;
 global java.lang.String MensajeErrorSinCredito;
 global java.lang.String CodigoCreditoCuota;
 global java.lang.String CodigoCreditoDiferido;
+global java.lang.String TipoOfertaBalloon;
+global java.lang.String FormaPagoCapitalizado;
+global java.lang.String FormaPagoDiferido;

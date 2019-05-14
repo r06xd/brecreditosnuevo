@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>IvaServicios</tableName>
+  <tableName>PerfilClienteExterno</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>-1</width>
@@ -22,7 +22,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;GRUPO&apos;]</header>
+      <header>Converted from [&apos;INICIO DEL RANGO DEL SCORE EQUIFAX&apos;, &apos;FIN DEL RANGO DE SCORE EQUIFAX&apos;]</header>
       <constraintValueType>1</constraintValueType>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
@@ -30,7 +30,7 @@
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 <value>param1</value>
-                <operator>==</operator>
+                <operator>&gt;=</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
                   <parts/>
@@ -45,7 +45,43 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getGrupo()</name>
+                          <name>getScoreEquifax()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param2</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <fieldType>String</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getScoreEquifax()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
@@ -75,11 +111,21 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>GRUPO</header>
+          <header>INICIO DEL RANGO DEL SCORE EQUIFAX</header>
           <constraintValueType>1</constraintValueType>
-          <factField>getGrupo()</factField>
+          <factField>getScoreEquifax()</factField>
           <fieldType>String</fieldType>
           <varName>param1</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>FIN DEL RANGO DE SCORE EQUIFAX</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getScoreEquifax()</factField>
+          <fieldType>String</fieldType>
+          <varName>param2</varName>
           <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
@@ -89,136 +135,20 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO TASACION&apos;, &apos;IVA E INCREMENTO TASACION&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxTasacion = Double.valueOf(@{param2}) * Double.valueOf(@{param3});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO TASACION</header>
-          <varName>param2</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO TASACION</header>
-          <varName>param3</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO CUSTODIA&apos;, &apos;IVA E INCREMENTO CUSTODIA&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxCustodia = Double.valueOf(@{param4}) * Double.valueOf(@{param5});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO CUSTODIA</header>
-          <varName>param4</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO CUSTODIA</header>
-          <varName>param5</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO TRANSPORTE&apos;, &apos;IVA E INCREMENTO TRANSPORTE&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxTransporte = Double.valueOf(@{param6}) * Double.valueOf(@{param7});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO TRANSPORTE</header>
-          <varName>param6</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO TRANSPORTE</header>
-          <varName>param7</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO RESGUARDO&apos;, &apos;IVA E INCREMENTO RESGUARDO&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxResguardo = Double.valueOf(@{param8}) * Double.valueOf(@{param9});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO RESGUARDO</header>
-          <varName>param8</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO RESGUARDO</header>
-          <varName>param9</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;CALCULO TASACION&apos;]</header>
+      <header>Converted from [&apos;PERFIL&apos;, &apos;GRUPO&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>tasacion</field>
-              <value>auxTasacion</value>
-              <nature>3</nature>
-              <type>Numeric</type>
+              <field>perfilExterno</field>
+              <value>param3</value>
+              <nature>7</nature>
+              <type>String</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>custodia</field>
-              <value>auxCustodia</value>
-              <nature>3</nature>
-              <type>Numeric</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>transporte</field>
-              <value>auxTransporte</value>
-              <nature>3</nature>
-              <type>Numeric</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>resguardo</field>
-              <value>auxResguardo</value>
-              <nature>3</nature>
+              <field>grupo</field>
+              <value>param4</value>
+              <nature>7</nature>
               <type>Numeric</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
@@ -229,9 +159,20 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>CALCULO TASACION</header>
-          <varName></varName>
-          <fieldType>Boolean</fieldType>
+          <header>PERFIL</header>
+          <varName>param3</varName>
+          <fieldType>String</fieldType>
+          <factType>Cliente</factType>
+          <factField>perfilExterno</factField>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>GRUPO</header>
+          <varName>param4</varName>
+          <fieldType>Numeric</fieldType>
+          <factType>Cliente</factType>
+          <factField>grupo</factField>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
@@ -240,9 +181,6 @@
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-      <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
@@ -257,32 +195,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoPerfilClienteExterno</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>818</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
+        <valueString>999</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -292,28 +220,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueNumeric>1</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -324,12 +232,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoPerfilClienteExterno</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>656</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>817</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -339,48 +257,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueNumeric>1</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -391,12 +269,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoPerfilClienteExterno</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>468</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>655</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -406,48 +294,8 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueNumeric>2</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
@@ -458,63 +306,255 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Created from row 5</valueString>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>GrupoPerfilClienteExterno</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>231</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>467</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">5</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>GrupoPerfilClienteExterno</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>230</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>5</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">6</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <dataType>BOOLEAN</dataType>
+        <valueString>GrupoPerfilClienteExterno</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">7</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPerfilClienteExterno</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">8</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPerfilClienteExterno</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>8</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">9</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPerfilClienteExterno</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">10</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR PARAMETRIZACION PERFIL CLIENTE EXTERNO</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPerfilClienteExterno</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>-1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>10</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric>3</valueNumeric>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
