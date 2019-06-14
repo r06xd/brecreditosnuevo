@@ -62,8 +62,11 @@ public class VariablesInternas implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("CVencida90D")
 	private java.lang.Double cVencida90D;
 
-	@org.kie.api.definition.type.Label(value = "TiempoCancelacion")
+	@org.kie.api.definition.type.Label("TiempoCancelacion")
 	private java.lang.Integer tiempoCancelacion;
+
+	@org.kie.api.definition.type.Label(value = "TipoOperacion")
+	private java.lang.String tipoOperacion;
 
 	public VariablesInternas() {
 	}
@@ -220,6 +223,14 @@ public class VariablesInternas implements java.io.Serializable {
 		this.tiempoCancelacion = tiempoCancelacion;
 	}
 
+	public java.lang.String getTipoOperacion() {
+		return this.tipoOperacion;
+	}
+
+	public void setTipoOperacion(java.lang.String tipoOperacion) {
+		this.tipoOperacion = tipoOperacion;
+	}
+
 	public VariablesInternas(java.lang.String TipoCliente,
 			java.lang.Integer moraPromedio, java.lang.Integer moraMaximo,
 			java.lang.Integer cantidadCreditos,
@@ -232,7 +243,7 @@ public class VariablesInternas implements java.io.Serializable {
 			java.lang.Double riesgoAcumulado,
 			java.lang.Integer scoreComportamiento,
 			java.lang.Double carteraCastigada, java.lang.Double cVencida90D,
-			java.lang.Integer tiempoCancelacion) {
+			java.lang.Integer tiempoCancelacion, java.lang.String tipoOperacion) {
 		this.TipoCliente = TipoCliente;
 		this.moraPromedio = moraPromedio;
 		this.moraMaximo = moraMaximo;
@@ -252,6 +263,7 @@ public class VariablesInternas implements java.io.Serializable {
 		this.carteraCastigada = carteraCastigada;
 		this.cVencida90D = cVencida90D;
 		this.tiempoCancelacion = tiempoCancelacion;
+		this.tipoOperacion = tipoOperacion;
 	}
 
 }

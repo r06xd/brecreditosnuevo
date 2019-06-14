@@ -82,6 +82,9 @@ public class Opcion implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO")
 	private String DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO;
 
+	@org.kie.api.definition.type.Label(value = "TipoOperacion")
+	private java.lang.String tipoOperacion;
+
 	public Opcion() {
 	}
 
@@ -382,6 +385,14 @@ public class Opcion implements java.io.Serializable {
 		this.DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO = DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO;
 	}
 
+	public java.lang.String getTipoOperacion() {
+		return this.tipoOperacion;
+	}
+
+	public void setTipoOperacion(java.lang.String tipoOperacion) {
+		this.tipoOperacion = tipoOperacion;
+	}
+
 	public Opcion(java.lang.Integer Plazo, java.lang.String PeriodoPlazo,
 			java.lang.String PeriodicidadPlazo,
 			java.lang.Double MontoFinanciado, java.lang.Double ValorARecibir,
@@ -409,7 +420,8 @@ public class Opcion implements java.io.Serializable {
 			java.lang.String TIPO_OFERTA,
 			java.lang.Integer PORCENTAJE_FLUJO_PLANEADO,
 			java.lang.Integer DIVIDENDO_FLUJO_PLANEADO,
-			java.lang.String DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO) {
+			java.lang.String DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO,
+			java.lang.String tipoOperacion) {
 		this.Plazo = Plazo;
 		this.PeriodoPlazo = PeriodoPlazo;
 		this.PeriodicidadPlazo = PeriodicidadPlazo;
@@ -446,5 +458,6 @@ public class Opcion implements java.io.Serializable {
 		this.PORCENTAJE_FLUJO_PLANEADO = PORCENTAJE_FLUJO_PLANEADO;
 		this.DIVIDENDO_FLUJO_PLANEADO = DIVIDENDO_FLUJO_PLANEADO;
 		this.DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO = DIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO;
+		this.tipoOperacion = tipoOperacion;
 	}
 }

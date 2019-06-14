@@ -25,6 +25,18 @@
       <import>
         <type>java.util.ArrayList</type>
       </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
+      </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
+      </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.OpcionesRenovacion</type>
+      </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>

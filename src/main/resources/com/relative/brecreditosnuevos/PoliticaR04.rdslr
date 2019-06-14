@@ -1,0 +1,17 @@
+package com.relative.brecreditosnuevos;
+
+import com.relative.brecreditosnuevos.objetosnegocio.Cliente;
+import com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio;
+import com.relative.brecreditosnuevos.objetosnegocio.DescuentosOperacion;
+
+rule "PoliticaR04"
+	dialect "mvel"
+	ruleflow-group "PoliticaR04"
+	when
+		>cliente : Cliente( tipo != "Q" )
+		>descuentoOperacion : DescuentosOperacion( estadoCreditoAnterior != "VIGENTE" , estadoCreditoAnterior != "CANCELADO" )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.getCodigoPolitica().add("4");
+end

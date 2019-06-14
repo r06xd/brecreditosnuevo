@@ -1,0 +1,10 @@
+package com.relative.brecreditosnuevos;
+
+import java.lang.Number;
+
+rule "PoliticaR10"
+	dialect "mvel"
+	ruleflow-group "PolitcaR10"
+	when
+	then
+end

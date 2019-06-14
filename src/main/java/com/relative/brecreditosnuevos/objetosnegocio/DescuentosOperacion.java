@@ -32,13 +32,16 @@ public class DescuentosOperacion implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("MontoSolicitadoCliente")
 	private Double MontoSolicitadoCliente;
 	@org.kie.api.definition.type.Label("NumeroOperacionMadre")
-	private Integer NumeroOperacionMadre;
+	private String NumeroOperacionMadre;
 	@org.kie.api.definition.type.Label("NumeroOperacionRenovar")
 	private Integer NumeroOperacionRenovar;
 	@org.kie.api.definition.type.Label("REFERENCIA_ADICIONAL")
 	private String REFERENCIA_ADICIONAL;
 	@org.kie.api.definition.type.Label("OperacionPropia")
 	private String OperacionPropia;
+
+	@org.kie.api.definition.type.Label("CustodiaDevengadaCreditoAnterior")
+	private java.lang.Double custodiaDevengadaCreditoAnterior;
 
 	public DescuentosOperacion() {
 	}
@@ -91,10 +94,6 @@ public class DescuentosOperacion implements java.io.Serializable {
 
 	public Double getMontoSolicitadoCliente() {
 		return MontoSolicitadoCliente;
-	}
-
-	public Integer getNumeroOperacionMadre() {
-		return NumeroOperacionMadre;
 	}
 
 	public Integer getNumeroOperacionRenovar() {
@@ -163,10 +162,6 @@ public class DescuentosOperacion implements java.io.Serializable {
 		this.MontoSolicitadoCliente = MontoSolicitadoCliente;
 	}
 
-	public void setNumeroOperacionMadre(Integer NumeroOperacionMadre) {
-		this.NumeroOperacionMadre = NumeroOperacionMadre;
-	}
-
 	public void setNumeroOperacionRenovar(Integer NumeroOperacionRenovar) {
 		this.NumeroOperacionRenovar = NumeroOperacionRenovar;
 	}
@@ -177,6 +172,23 @@ public class DescuentosOperacion implements java.io.Serializable {
 
 	public void setOperacionPropia(String OperacionPropia) {
 		this.OperacionPropia = OperacionPropia;
+	}
+
+	public java.lang.Double getCustodiaDevengadaCreditoAnterior() {
+		return this.custodiaDevengadaCreditoAnterior;
+	}
+
+	public void setCustodiaDevengadaCreditoAnterior(
+			java.lang.Double custodiaDevengadaCreditoAnterior) {
+		this.custodiaDevengadaCreditoAnterior = custodiaDevengadaCreditoAnterior;
+	}
+
+	public java.lang.String getNumeroOperacionMadre() {
+		return this.NumeroOperacionMadre;
+	}
+
+	public void setNumeroOperacionMadre(java.lang.String NumeroOperacionMadre) {
+		this.NumeroOperacionMadre = NumeroOperacionMadre;
 	}
 
 	public DescuentosOperacion(java.lang.Double SaldoMontoCreditoAnterior,
@@ -191,10 +203,11 @@ public class DescuentosOperacion implements java.io.Serializable {
 			java.lang.String FechaEfectivaCreditoAnterior,
 			java.lang.String FechaVencimientoCreditoAnterior,
 			java.lang.Double MontoSolicitadoCliente,
-			java.lang.Integer NumeroOperacionMadre,
+			java.lang.String NumeroOperacionMadre,
 			java.lang.Integer NumeroOperacionRenovar,
 			java.lang.String REFERENCIA_ADICIONAL,
-			java.lang.String OperacionPropia) {
+			java.lang.String OperacionPropia,
+			java.lang.Double custodiaDevengadaCreditoAnterior) {
 		this.SaldoMontoCreditoAnterior = SaldoMontoCreditoAnterior;
 		this.SaldoInteresCreditoAnterior = SaldoInteresCreditoAnterior;
 		this.MoraCreditoAnterior = MoraCreditoAnterior;
@@ -211,5 +224,6 @@ public class DescuentosOperacion implements java.io.Serializable {
 		this.NumeroOperacionRenovar = NumeroOperacionRenovar;
 		this.REFERENCIA_ADICIONAL = REFERENCIA_ADICIONAL;
 		this.OperacionPropia = OperacionPropia;
+		this.custodiaDevengadaCreditoAnterior = custodiaDevengadaCreditoAnterior;
 	}
 }

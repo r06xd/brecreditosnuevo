@@ -1,0 +1,12 @@
+package com.relative.brecreditosnuevos;
+
+import java.lang.Number;
+import com.relative.brecreditosnuevos.objetosnegocio.Cliente;
+import com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio;
+
+rule "PoliticaR18"
+	dialect "mvel"
+	ruleflow-group "PoliticaR18"
+	when
+	then
+end
