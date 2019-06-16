@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.relative</groupId>
-  <artifactId>brecreditosnuevos-Pruebas</artifactId>
-  <version>3.0.39</version>
+  <artifactId>brecreditosnuevos</artifactId>
+  <version>3.0.42</version>
   <packaging>kjar</packaging>
-  <name>brecreditosnuevos-Pruebas</name>
+  <name>brecreditosnuevos</name>
   <description>Proyecto de gestion de reglas denegocio</description>
   <dependencies>
     <dependency>
