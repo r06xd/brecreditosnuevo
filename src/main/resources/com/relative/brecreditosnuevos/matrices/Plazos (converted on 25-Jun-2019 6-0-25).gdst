@@ -2377,7 +2377,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2437,7 +2437,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2494,7 +2494,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2554,7 +2554,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2611,7 +2611,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2671,7 +2671,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2788,7 +2788,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2905,7 +2905,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>90</valueString>
+        <valueString>10</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3022,7 +3022,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3256,7 +3256,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3373,7 +3373,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>75</valueString>
+        <valueString>25</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3490,7 +3490,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>25</valueString>
+        <valueString>75</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3607,7 +3607,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3664,7 +3664,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3724,7 +3724,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3781,7 +3781,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3841,7 +3841,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3898,7 +3898,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3958,7 +3958,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4075,7 +4075,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4192,7 +4192,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>90</valueString>
+        <valueString>10</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4309,7 +4309,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4543,7 +4543,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4660,7 +4660,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>75</valueString>
+        <valueString>25</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4777,7 +4777,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>25</valueString>
+        <valueString>75</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4894,7 +4894,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4951,7 +4951,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5011,7 +5011,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5068,7 +5068,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5128,7 +5128,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5185,7 +5185,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5245,7 +5245,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5362,7 +5362,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5479,7 +5479,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>90</valueString>
+        <valueString>10</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5596,7 +5596,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5830,7 +5830,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5947,7 +5947,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>75</valueString>
+        <valueString>25</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6064,7 +6064,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>25</valueString>
+        <valueString>75</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6181,7 +6181,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6238,7 +6238,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6298,7 +6298,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6355,7 +6355,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6415,7 +6415,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6472,7 +6472,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6532,7 +6532,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6649,7 +6649,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6766,7 +6766,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>90</valueString>
+        <valueString>10</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6883,7 +6883,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7117,7 +7117,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7234,7 +7234,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>75</valueString>
+        <valueString>25</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7351,7 +7351,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>25</valueString>
+        <valueString>75</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7468,7 +7468,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7525,7 +7525,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7585,7 +7585,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7642,7 +7642,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7702,7 +7702,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7759,7 +7759,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7819,7 +7819,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>100</valueString>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7936,7 +7936,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8053,7 +8053,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>90</valueString>
+        <valueString>10</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8170,7 +8170,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8404,7 +8404,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8521,7 +8521,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>75</valueString>
+        <valueString>25</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8638,7 +8638,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>25</valueString>
+        <valueString>75</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8755,7 +8755,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>100</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
