@@ -37,6 +37,9 @@
       <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
       </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Garantia</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>

@@ -1,0 +1,6 @@
+package com.relative.brecreditosnuevos.matrices;
+
+global java.lang.Double auxTasacion;
+global java.lang.Double auxCustodia;
+global java.lang.Double auxTransporte;
+global java.lang.Double auxResguardo;

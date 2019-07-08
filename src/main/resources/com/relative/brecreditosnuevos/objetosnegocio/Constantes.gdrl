@@ -23,3 +23,5 @@ global java.lang.String CodigoCreditoDiferido;
 global java.lang.String TipoOfertaBalloon;
 global java.lang.String FormaPagoCapitalizado;
 global java.lang.String FormaPagoDiferido;
+global java.lang.String FormaPagoDesembolso;
+global java.lang.String TipoOfertaBalloonNovaciones;

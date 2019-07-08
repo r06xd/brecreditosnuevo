@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.relative</groupId>
   <artifactId>brecreditosnuevos</artifactId>
-  <version>3.0.87</version>
+  <version>3.0.108</version>
   <packaging>kjar</packaging>
   <name>brecreditosnuevos</name>
   <description>Proyecto de gestion de reglas denegocio</description>
