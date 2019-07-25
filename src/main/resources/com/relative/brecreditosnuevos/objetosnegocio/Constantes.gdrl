@@ -25,3 +25,7 @@ global java.lang.String FormaPagoCapitalizado;
 global java.lang.String FormaPagoDiferido;
 global java.lang.String FormaPagoDesembolso;
 global java.lang.String TipoOfertaBalloonNovaciones;
+global java.lang.String CodigoErrorSinGarantia;
+global java.lang.String MensajeErrorSinGarantia;
+global java.lang.String CodigoErrorValoresCreditoNoCuadran;
+global java.lang.String MensajeErrorValoresCreditoNoCuadran;
