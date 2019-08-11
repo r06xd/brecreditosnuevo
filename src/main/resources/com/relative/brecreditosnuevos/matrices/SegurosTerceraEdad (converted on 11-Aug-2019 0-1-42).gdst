@@ -1,5 +1,5 @@
 <decision-table52>
-  <tableName>IvaServicios</tableName>
+  <tableName>SegurosTerceraEdad</tableName>
   <rowNumberCol>
     <hideColumn>false</hideColumn>
     <width>-1</width>
@@ -22,7 +22,7 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;TIPO OPERACION&apos;]</header>
+      <header>Converted from [&apos;PLAZO&apos;]</header>
       <constraintValueType>1</constraintValueType>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
@@ -30,136 +30,6 @@
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 <value>param1</value>
-                <operator>==</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <factType>VariablesNegocio</factType>
-                <fieldType>String</fieldType>
-                <expLeftSide>
-                  <parts>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
-                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getTipoOperacion()</name>
-                          <classType>java.lang.String</classType>
-                          <genericType>String</genericType>
-                        </next>
-                        <name>variablesNegocio</name>
-                        <classType>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</classType>
-                        <genericType>this</genericType>
-                      </next>
-                      <name>VariablesNegocio</name>
-                      <classType>VariablesNegocio</classType>
-                      <genericType>VariablesNegocio</genericType>
-                      <factType>VariablesNegocio</factType>
-                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
-                  </parts>
-                  <index>2147483647</index>
-                </expLeftSide>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            </constraints>
-          </constraintList>
-          <factType>VariablesNegocio</factType>
-          <boundName>variablesNegocio</boundName>
-          <isNegated>false</isNegated>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>TIPO OPERACION</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>getTipoOperacion()</factField>
-          <fieldType>String</fieldType>
-          <varName>param1</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</factType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;GRUPO&apos;]</header>
-      <constraintValueType>1</constraintValueType>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <constraintList>
-            <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                <value>param2</value>
-                <operator>==</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <factType>Cliente</factType>
-                <fieldType>String</fieldType>
-                <expLeftSide>
-                  <parts>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
-                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getGrupo()</name>
-                          <classType>java.lang.String</classType>
-                          <genericType>String</genericType>
-                        </next>
-                        <name>cliente</name>
-                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
-                        <genericType>this</genericType>
-                      </next>
-                      <name>Cliente</name>
-                      <classType>Cliente</classType>
-                      <genericType>Cliente</genericType>
-                      <factType>Cliente</factType>
-                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
-                  </parts>
-                  <index>2147483647</index>
-                </expLeftSide>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            </constraints>
-          </constraintList>
-          <factType>Cliente</factType>
-          <boundName>cliente</boundName>
-          <isNegated>false</isNegated>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>GRUPO</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>getGrupo()</factField>
-          <fieldType>String</fieldType>
-          <varName>param2</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;CARTERA&apos;]</header>
-      <constraintValueType>1</constraintValueType>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <constraintList>
-            <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                <value>param3</value>
                 <operator>==</operator>
                 <constraintValueType>7</constraintValueType>
                 <expression>
@@ -175,7 +45,7 @@
                         <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
                         <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
                           <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                          <name>getTIPO_OFERTA()</name>
+                          <name>getPlazo()</name>
                           <classType>java.lang.String</classType>
                           <genericType>String</genericType>
                         </next>
@@ -205,12 +75,121 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>CARTERA</header>
+          <header>PLAZO</header>
           <constraintValueType>1</constraintValueType>
-          <factField>getTIPO_OFERTA()</factField>
+          <factField>getPlazo()</factField>
+          <fieldType>String</fieldType>
+          <varName>param1</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Converted from [&apos;AÑO MINIMO EN MESES&apos;, &apos;AÑO MAXIMO EN MESES&apos;]</header>
+      <constraintValueType>1</constraintValueType>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param2</value>
+                <operator>&gt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getMonths()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>param3</value>
+                <operator>&lt;=</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <factType>Cliente</factType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionVariable">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionText">
+                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                          <name>getMonths()</name>
+                          <classType>java.lang.String</classType>
+                          <genericType>String</genericType>
+                        </next>
+                        <name>cliente</name>
+                        <classType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</classType>
+                        <genericType>this</genericType>
+                      </next>
+                      <name>Cliente</name>
+                      <classType>Cliente</classType>
+                      <genericType>Cliente</genericType>
+                      <factType>Cliente</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionText reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+            </constraints>
+          </constraintList>
+          <factType>Cliente</factType>
+          <boundName>cliente</boundName>
+          <isNegated>false</isNegated>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>AÑO MINIMO EN MESES</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getMonths()</factField>
+          <fieldType>String</fieldType>
+          <varName>param2</varName>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>AÑO MAXIMO EN MESES</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>getMonths()</factField>
           <fieldType>String</fieldType>
           <varName>param3</varName>
-          <factType>com.relative.brecreditosnuevos.objetosnegocio.Opcion</factType>
+          <factType>com.relative.brecreditosnuevos.objetosnegocio.Cliente</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
@@ -219,24 +198,24 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO TASACION&apos;, &apos;IVA E INCREMENTO TASACION&apos;]</header>
+      <header>Converted from [&apos;SEGURO&apos;, &apos;SEGURO&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxTasacion = Double.valueOf(@{param4}) * Double.valueOf(@{param5});</text>
+          <text>auxSeguros = Double.valueOf(@{param4}) * Double.valueOf(@{param5});</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>IVA E INCREMENTO TASACION</header>
+          <header>SEGURO</header>
           <varName>param4</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>IVA E INCREMENTO TASACION</header>
+          <header>SEGURO</header>
           <varName>param5</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
@@ -245,24 +224,24 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO CUSTODIA&apos;, &apos;IVA E INCREMENTO CUSTODIA&apos;]</header>
+      <header>Converted from [&apos;SEGUROM4&apos;, &apos;SEGUROM4&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxCustodia = Double.valueOf(@{param6}) * Double.valueOf(@{param7});</text>
+          <text>auxSegurosM4 = Double.valueOf(@{param6}) * Double.valueOf(@{param7});</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>IVA E INCREMENTO CUSTODIA</header>
+          <header>SEGUROM4</header>
           <varName>param6</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>IVA E INCREMENTO CUSTODIA</header>
+          <header>SEGUROM4</header>
           <varName>param7</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
@@ -271,95 +250,31 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO TRANSPORTE&apos;, &apos;IVA E INCREMENTO TRANSPORTE&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxTransporte = Double.valueOf(@{param8}) * Double.valueOf(@{param9});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO TRANSPORTE</header>
-          <varName>param8</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO TRANSPORTE</header>
-          <varName>param9</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;IVA E INCREMENTO RESGUARDO&apos;, &apos;IVA E INCREMENTO RESGUARDO&apos;]</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>auxResguardo = Double.valueOf(@{param10}) * Double.valueOf(@{param11});</text>
-        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO RESGUARDO</header>
-          <varName>param10</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>IVA E INCREMENTO RESGUARDO</header>
-          <varName>param11</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Converted from [&apos;CALCULO TASACION&apos;]</header>
+      <header>Converted from [&apos;SEGURO&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.ActionSetField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>tasacion</field>
-              <value>auxTasacion</value>
+              <field>costoSeguro</field>
+              <value>auxSeguros</value>
               <nature>3</nature>
               <type>Numeric</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>custodia</field>
-              <value>auxCustodia</value>
-              <nature>3</nature>
-              <type>Numeric</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>transporte</field>
-              <value>auxTransporte</value>
-              <nature>3</nature>
-              <type>Numeric</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>resguardo</field>
-              <value>auxResguardo</value>
+              <field>costoValoracion</field>
+              <value>auxSegurosM4</value>
               <nature>3</nature>
               <type>Numeric</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
           </fieldValues>
-          <variable>cliente</variable>
+          <variable>opcion</variable>
         </org.drools.workbench.models.datamodel.rule.ActionSetField>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>CALCULO TASACION</header>
+          <header>SEGURO</header>
           <varName></varName>
           <fieldType>Boolean</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
@@ -369,13 +284,10 @@
   <imports>
     <imports>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
-      </org.kie.soup.project.datamodel.imports.Import>
-      <org.kie.soup.project.datamodel.imports.Import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
       </org.kie.soup.project.datamodel.imports.Import>
       <org.kie.soup.project.datamodel.imports.Import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
@@ -390,67 +302,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NUE</valueString>
+        <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>N</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>2.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
+        <valueString>2.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -467,67 +359,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NUE</valueString>
+        <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>N</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.05</valueString>
+        <valueString>3.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.05</valueString>
+        <valueString>3.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -544,67 +416,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NUE</valueString>
+        <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>N</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
+        <valueString>4.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
+        <valueString>4.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -621,67 +473,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NUE</valueString>
+        <valueString>6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>6.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.06</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
+        <valueString>6.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -698,67 +530,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NUE</valueString>
+        <valueString>7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
+        <valueString>7.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.06</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
+        <valueString>7.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -775,67 +587,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NUE</valueString>
+        <valueString>9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.15</valueString>
+        <valueString>9.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.06</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.15</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.15</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.15</valueString>
+        <valueString>9.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -852,67 +644,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NOV</valueString>
+        <valueString>11</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>O</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>11.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.06</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
+        <valueString>11.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -929,67 +701,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NOV</valueString>
+        <valueString>12</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>O</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.05</valueString>
+        <valueString>12.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.06</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.05</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
+        <valueString>12.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1006,67 +758,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NOV</valueString>
+        <valueString>18</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>3</valueString>
+        <valueString>864</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>O</valueString>
+        <valueString>882</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.31</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
+        <valueString>18.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.06</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
+        <valueString>18.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1083,67 +815,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NOV</valueString>
+        <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>883</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B</valueString>
+        <valueString>888</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>2.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
+        <valueString>2.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1160,67 +872,47 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NOV</valueString>
+        <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>2</valueString>
+        <valueString>883</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B</valueString>
+        <valueString>888</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
+        <valueString>3.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.1</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1.12</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>1</valueString>
+        <valueString>3.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1237,17 +929,468 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>VALOR DE IVA E INCREMENTO DE SERVICIOS</valueString>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoIvaServicios</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>NOV</valueString>
+        <valueString>4</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>883</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>888</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>4.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>4.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">13</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>883</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>888</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">14</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>883</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>888</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">15</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>883</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>888</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">16</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>883</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>888</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">17</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>883</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>888</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">18</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>883</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>888</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">19</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>2</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>2.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>2.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">20</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1257,47 +1400,431 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B</valueString>
+        <valueString>900</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>1199</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.15</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>3.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.15</valueString>
+        <valueString>0.026</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>3.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.15</valueString>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">21</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1.12</valueString>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1</valueString>
+        <valueString>4</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>4.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.026</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>4.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">22</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">23</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">24</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">25</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">26</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">27</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>SEGURO Y SEGUROM4 POR EDAD</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoSeguroTerceraEdad</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>900</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>1199</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.31</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18.0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0.06</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18.0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
