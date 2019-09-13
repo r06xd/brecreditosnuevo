@@ -230,7 +230,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>18.5</valueNumeric>
+        <valueNumeric>19</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -257,7 +257,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>18</valueNumeric>
+        <valueNumeric>18.5</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -311,7 +311,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>17</valueNumeric>
+        <valueNumeric>17.5</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

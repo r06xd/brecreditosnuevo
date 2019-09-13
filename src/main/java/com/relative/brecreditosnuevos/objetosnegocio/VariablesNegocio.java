@@ -61,8 +61,11 @@ public class VariablesNegocio implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("TotalServiciosDiferidos")
 	private java.lang.Double totalServiciosDiferidos;
 
-	@org.kie.api.definition.type.Label(value = "TipoOperacion")
+	@org.kie.api.definition.type.Label("TipoOperacion")
 	private java.lang.String tipoOperacion;
+
+	@org.kie.api.definition.type.Label(value = "RiesgoAcumulado")
+	private java.lang.Double riesgoAcumulado;
 
 	public VariablesNegocio() {
 	}
@@ -223,6 +226,14 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.tipoOperacion = tipoOperacion;
 	}
 
+	public java.lang.Double getRiesgoAcumulado() {
+		return this.riesgoAcumulado;
+	}
+
+	public void setRiesgoAcumulado(java.lang.Double riesgoAcumulado) {
+		this.riesgoAcumulado = riesgoAcumulado;
+	}
+
 	public VariablesNegocio(java.lang.Double totalGarantia,
 			java.lang.Double totalPeso, java.lang.Double precioGramo,
 			java.lang.Boolean detener, java.lang.Integer perfilInternoNuerico,
@@ -237,7 +248,7 @@ public class VariablesNegocio implements java.io.Serializable {
 			java.lang.String mensaje,
 			java.lang.Double totalServiciosCapitalizados,
 			java.lang.Double totalServiciosDiferidos,
-			java.lang.String tipoOperacion) {
+			java.lang.String tipoOperacion, java.lang.Double riesgoAcumulado) {
 		this.totalGarantia = totalGarantia;
 		this.totalPeso = totalPeso;
 		this.precioGramo = precioGramo;
@@ -257,6 +268,7 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.totalServiciosCapitalizados = totalServiciosCapitalizados;
 		this.totalServiciosDiferidos = totalServiciosDiferidos;
 		this.tipoOperacion = tipoOperacion;
+		this.riesgoAcumulado = riesgoAcumulado;
 	}
 
 }

@@ -9,5 +9,8 @@ rule "PoliticaR17"
 	dialect "mvel"
 	ruleflow-group "PoliticaR17"
 	when
+		>cliente : Cliente( colateralExcepcionada == 0 , riesgoTotal > 0.0 )
+		>variablesNegocio : VariablesNegocio( riesgoAcumulado >= 15000 )
 	then
+		>variablesNegocio.getCodigoPolitica().add("17");
 end

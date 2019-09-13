@@ -1,0 +1,4 @@
+package com.relative.brecreditosnuevos.matrices;
+
+global java.lang.Double auxSeguros;
+global java.lang.Double auxSegurosM4;

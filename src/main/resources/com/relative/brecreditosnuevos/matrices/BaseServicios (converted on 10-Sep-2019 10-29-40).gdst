@@ -726,7 +726,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>90</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -880,7 +880,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>50</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1459,7 +1459,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>12.95</valueNumeric>
+        <valueNumeric>10.64</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1613,7 +1613,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric>21.45</valueNumeric>
+        <valueNumeric>18.86</valueNumeric>
         <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
