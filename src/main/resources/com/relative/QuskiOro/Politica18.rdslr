@@ -1,0 +1,15 @@
+package com.relative.QuskiOro;
+
+import java.lang.Number;
+import com.relative.QuskiOro.ObjetosNegocio.Cliente;
+import com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio;
+
+rule "Politica18"
+	dialect "mvel"
+	ruleflow-group "Politica18"
+	when
+		>cliente : Cliente( numeroCreditos > 5 )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.getCodigoPolitica().add("18");
+end

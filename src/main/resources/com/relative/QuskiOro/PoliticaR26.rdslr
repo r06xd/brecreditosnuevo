@@ -1,0 +1,16 @@
+package com.relative.QuskiOro;
+
+import java.lang.Number;
+import com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio;
+import com.relative.QuskiOro.ObjetosNegocio.Cliente;
+
+rule "PoliticaR26"
+	dialect "mvel"
+	ruleflow-group "PoliticaR26"
+	when
+		>cliente : Cliente( colateralExcepcionada != 0 , colateralExcepcionada < 80 , colateralExcepcionada > 120 )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.getCodigoPolitica().add("26");
+end

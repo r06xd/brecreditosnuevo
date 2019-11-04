@@ -1,0 +1,20 @@
+package com.relative.QuskiOro;
+
+import java.lang.Number;
+import com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio;
+import com.relative.QuskiOro.ObjetosNegocio.Cliente;
+
+rule "Politica16"
+	dialect "mvel"
+	ruleflow-group "Politica16"
+	when
+		>variablesNegocio : VariablesNegocio( totalGarantia > 10000.00 )
+		>cliente : Cliente( colateralExcepcionada == 0 )
+	then
+		>variablesNegocio.setTotalGarantia( 10000.00 );
+		>variablesNegocio.setDetenerColateral( true );
+		>variablesNegocio.setDetenerColateralAdicional( true );
+		>variablesNegocio.setDetenerCalculoMontoNovacion( true );
+		>cliente.setColateral( (int)((variablesNegocio.getTotalPrecioOro()/10000.00)*100) );
+		>cliente.setColateralCalculoBre( (int)((variablesNegocio.getTotalPrecioOro()/10000.00)*100) );
+end

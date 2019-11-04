@@ -26,16 +26,31 @@
         <type>java.util.ArrayList</type>
       </import>
       <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
+        <type>com.relative.QuskiOro.ObjetosNegocio.Cliente</type>
+      </import>
+      <import>
+        <type>com.relative.QuskiOro.ObjetosNegocio.Opcion</type>
+      </import>
+      <import>
+        <type>com.relative.QuskiOro.ObjetosNegocio.OpcionesRenovacion</type>
+      </import>
+      <import>
+        <type>com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio</type>
+      </import>
+      <import>
+        <type>com.relative.QuskiOro.ObjetosNegocio.Garantia</type>
       </import>
       <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Opcion</type>
       </import>
       <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.OpcionesRenovacion</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
       </import>
       <import>
-        <type>com.relative.brecreditosnuevos.objetosnegocio.VariablesNegocio</type>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.Cliente</type>
+      </import>
+      <import>
+        <type>com.relative.brecreditosnuevos.objetosnegocio.OpcionesRenovacion</type>
       </import>
       <import>
         <type>com.relative.brecreditosnuevos.objetosnegocio.Garantia</type>

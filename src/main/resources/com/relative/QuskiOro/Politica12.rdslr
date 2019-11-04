@@ -1,0 +1,15 @@
+package com.relative.QuskiOro;
+
+import com.relative.QuskiOro.ObjetosNegocio.Cliente;
+import com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio;
+
+rule "Politica12"
+	dialect "mvel"
+	ruleflow-group "Politica12"
+	when
+		>cliente : Cliente( bloqueosCliente != "N" )
+		>variablesNegocio : VariablesNegocio( )
+	then
+		>variablesNegocio.setDetener( true );
+		>variablesNegocio.setCodigoPoliticaBloqueo( "12" );
+end

@@ -1,0 +1,4 @@
+package com.relative.QuskiOro.Matrices;
+
+global java.lang.Double auxSeguros;
+global java.lang.Double auxSegurosM4;

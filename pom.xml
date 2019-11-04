@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.relative</groupId>
-  <artifactId>brecreditosnuevos</artifactId>
-  <version>3.0.13</version>
+  <artifactId>QuskiOro</artifactId>
+  <version>4.0.124</version>
   <packaging>kjar</packaging>
-  <name>brecreditosnuevos</name>
-  <description>Proyecto de gestion de reglas denegocio</description>
+  <name>QuskiOro</name>
+  <description>Bpm para proceso de analisis de oro</description>
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
