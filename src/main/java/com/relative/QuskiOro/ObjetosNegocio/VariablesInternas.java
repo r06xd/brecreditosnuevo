@@ -80,14 +80,20 @@ public class VariablesInternas implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("PerfilAnterior")
 	private java.lang.Integer perfilAnterior;
 
-	@org.kie.api.definition.type.Label(value = "Retanqueo")
+	@org.kie.api.definition.type.Label("Retanqueo")
 	private java.lang.String retanqueo;
 
-	@org.kie.api.definition.type.Label(value = "NumeroNovacion")
+	@org.kie.api.definition.type.Label("NumeroNovacion")
 	private java.lang.Integer numeroNovacion;
 
-	@org.kie.api.definition.type.Label(value = "RangoMora")
+	@org.kie.api.definition.type.Label("RangoMora")
 	private java.lang.Integer rangoMora;
+
+	@org.kie.api.definition.type.Label(value = "CoberturaActual")
+	private java.lang.Integer coberturaActual;
+
+	@org.kie.api.definition.type.Label(value = "CoberturaAnterior")
+	private java.lang.Integer coberturaAnterior;
 
 	public VariablesInternas() {
 	}
@@ -308,6 +314,22 @@ public class VariablesInternas implements java.io.Serializable {
 		this.rangoMora = rangoMora;
 	}
 
+	public java.lang.Integer getCoberturaActual() {
+		return this.coberturaActual;
+	}
+
+	public void setCoberturaActual(java.lang.Integer coberturaActual) {
+		this.coberturaActual = coberturaActual;
+	}
+
+	public java.lang.Integer getCoberturaAnterior() {
+		return this.coberturaAnterior;
+	}
+
+	public void setCoberturaAnterior(java.lang.Integer coberturaAnterior) {
+		this.coberturaAnterior = coberturaAnterior;
+	}
+
 	public VariablesInternas(java.lang.String TipoCliente,
 			java.lang.Integer moraPromedio, java.lang.Integer moraMaximo,
 			java.lang.Integer cantidadCreditos,
@@ -325,7 +347,9 @@ public class VariablesInternas implements java.io.Serializable {
 			java.lang.String estadoGarantia,
 			java.lang.Double pesoNetoCredOrigen,
 			java.lang.Integer perfilAnterior, java.lang.String retanqueo,
-			java.lang.Integer numeroNovacion, java.lang.Integer rangoMora) {
+			java.lang.Integer numeroNovacion, java.lang.Integer rangoMora,
+			java.lang.Integer coberturaActual,
+			java.lang.Integer coberturaAnterior) {
 		this.TipoCliente = TipoCliente;
 		this.moraPromedio = moraPromedio;
 		this.moraMaximo = moraMaximo;
@@ -353,6 +377,8 @@ public class VariablesInternas implements java.io.Serializable {
 		this.retanqueo = retanqueo;
 		this.numeroNovacion = numeroNovacion;
 		this.rangoMora = rangoMora;
+		this.coberturaActual = coberturaActual;
+		this.coberturaAnterior = coberturaAnterior;
 	}
 
 }

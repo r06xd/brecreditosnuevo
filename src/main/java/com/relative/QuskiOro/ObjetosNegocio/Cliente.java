@@ -141,10 +141,10 @@ public class Cliente implements java.io.Serializable {
 	private java.lang.Integer coberturaInicial;
 
 	@org.kie.api.definition.type.Label("CoberturaActual")
-	private Double coberturaActual;
+	private Integer coberturaActual;
 
 	@org.kie.api.definition.type.Label("CoberturaOferta")
-	private Double coberturaOferta;
+	private Integer coberturaOferta;
 
 	@org.kie.api.definition.type.Label("PermanenciaCredito")
 	private java.lang.Integer permanenciaCredito;
@@ -168,15 +168,15 @@ public class Cliente implements java.io.Serializable {
 	private java.lang.String perfilInternoNumerico;
 
 	@org.kie.api.definition.type.Label("CoberturaAnterior")
-	private java.lang.Double coberturaAnterior;
+	private Integer coberturaAnterior;
 
-	@org.kie.api.definition.type.Label(value = "Retanqueo")
+	@org.kie.api.definition.type.Label("Retanqueo")
 	private java.lang.String retanqueo;
 
-	@org.kie.api.definition.type.Label(value = "NumeroNovacion")
+	@org.kie.api.definition.type.Label("NumeroNovacion")
 	private java.lang.Integer numeroNovacion;
 
-	@org.kie.api.definition.type.Label(value = "RangoMora")
+	@org.kie.api.definition.type.Label("RangoMora")
 	private java.lang.Integer rangoMora;
 
 	public Cliente() {
@@ -599,30 +599,6 @@ public class Cliente implements java.io.Serializable {
 		this.perfilCliente = perfilCliente;
 	}
 
-	public java.lang.Double getCoberturaAnterior() {
-		return this.coberturaAnterior;
-	}
-
-	public void setCoberturaAnterior(java.lang.Double coberturaAnterior) {
-		this.coberturaAnterior = coberturaAnterior;
-	}
-
-	public java.lang.Double getCoberturaActual() {
-		return this.coberturaActual;
-	}
-
-	public void setCoberturaActual(java.lang.Double coberturaActual) {
-		this.coberturaActual = coberturaActual;
-	}
-
-	public java.lang.Double getCoberturaOferta() {
-		return this.coberturaOferta;
-	}
-
-	public void setCoberturaOferta(java.lang.Double coberturaOferta) {
-		this.coberturaOferta = coberturaOferta;
-	}
-
 	public java.lang.String getRetanqueo() {
 		return this.retanqueo;
 	}
@@ -645,6 +621,30 @@ public class Cliente implements java.io.Serializable {
 
 	public void setRangoMora(java.lang.Integer rangoMora) {
 		this.rangoMora = rangoMora;
+	}
+
+	public java.lang.Integer getCoberturaActual() {
+		return this.coberturaActual;
+	}
+
+	public void setCoberturaActual(java.lang.Integer coberturaActual) {
+		this.coberturaActual = coberturaActual;
+	}
+
+	public java.lang.Integer getCoberturaOferta() {
+		return this.coberturaOferta;
+	}
+
+	public void setCoberturaOferta(java.lang.Integer coberturaOferta) {
+		this.coberturaOferta = coberturaOferta;
+	}
+
+	public java.lang.Integer getCoberturaAnterior() {
+		return this.coberturaAnterior;
+	}
+
+	public void setCoberturaAnterior(java.lang.Integer coberturaAnterior) {
+		this.coberturaAnterior = coberturaAnterior;
 	}
 
 	public Cliente(java.lang.Integer edad, java.util.Date fechaNacimiento,
@@ -676,7 +676,8 @@ public class Cliente implements java.io.Serializable {
 			java.lang.Integer colateralOriginal,
 			java.lang.Integer tiempoCancelacion, java.lang.Integer months,
 			java.lang.Integer coberturaInicial,
-			java.lang.Double coberturaActual, java.lang.Double coberturaOferta,
+			java.lang.Integer coberturaActual,
+			java.lang.Integer coberturaOferta,
 			java.lang.Integer permanenciaCredito,
 			java.lang.String estadoGarantia,
 			java.lang.Double pesoNetoCredOrigen,
@@ -684,7 +685,7 @@ public class Cliente implements java.io.Serializable {
 			java.lang.Integer colateralAdicionalMontoFinanciado,
 			java.lang.Integer perfilCliente,
 			java.lang.String perfilInternoNumerico,
-			java.lang.Double coberturaAnterior, java.lang.String retanqueo,
+			java.lang.Integer coberturaAnterior, java.lang.String retanqueo,
 			java.lang.Integer numeroNovacion, java.lang.Integer rangoMora) {
 		this.edad = edad;
 		this.fechaNacimiento = fechaNacimiento;
