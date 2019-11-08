@@ -22,13 +22,13 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Converted from [&apos;CARTERA&apos;, &apos;DECLARACION DE VARIABLE ADICIONAL&apos;, &apos;DECLARACION DE VARIABLE ADICIONAL&apos;]</header>
+      <header>Converted from [&apos;CARTERA&apos;, &apos;DECLARACION DE VARIABLE ADICIONAL&apos;, &apos;DECLARACION DE VARIABLE ADICIONAL&apos;, &apos;TIPO OPERACION&apos;]</header>
       <constraintValueType>1</constraintValueType>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
           <text>cliente:Cliente(cliente.getCartera()==&quot;@{param1}&quot;)
 opcionRenovacion:OpcionesRenovacion(@{param2})
-variablesNegocio:VariablesNegocio(variablesNegocio.getTotalGarantia()&gt;=&quot;@{param3}&quot;)</text>
+variablesNegocio:VariablesNegocio(variablesNegocio.getTotalGarantia()&gt;=&quot;@{param3}&quot;, variablesNegocio.getTipoOperacion() == &quot;@{param4}&quot;)</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
@@ -56,6 +56,14 @@ variablesNegocio:VariablesNegocio(variablesNegocio.getTotalGarantia()&gt;=&quot;
           <fieldType>Object</fieldType>
           <varName>param3</varName>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>TIPO OPERACION</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Object</fieldType>
+          <varName>param4</varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
@@ -66,24 +74,24 @@ variablesNegocio:VariablesNegocio(variablesNegocio.getTotalGarantia()&gt;=&quot;
       <header>Converted from [&apos;PLAZO OFERTA&apos;, &apos;PERIODO PLAZO&apos;, &apos;PERIODICIDAD PLAZO&apos;, &apos;FORMA PAGO ABONO CAPITAL&apos;, &apos;FORMA PAGO CAPITAL&apos;, &apos;FORMA PAGO CUSTODIA&apos;, &apos;FORMA PAGO FIDEICOMISO&apos;, &apos;FORMA PAGO INTERES&apos;, &apos;FORMA PAGO MORA&apos;, &apos;FORMA PAGO GASTO COBRANZA&apos;, &apos;FORMA PAGO SEGURO&apos;, &apos;FORMA PAGO TASADOR&apos;, &apos;FORMA PAGO TRANSPORTE&apos;, &apos;FORMA PAGO VALORACION&apos;, &apos;TIPO OFERTA&apos;, &apos;PORCENTAJE FLUJO PLANEADO&apos;, &apos;DIVIDENDO FLUJO PLANEADO&apos;, &apos;DIVIDENDOS PRORRATEO SERVICIOS DIFERIDO&apos;]</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>Opcion opcion=new Opcion();opcion.setPlazo(Integer.valueOf(@{param4}));
-opcion.setPeriodoPlazo(&quot;@{param5}&quot;);
-opcion.setPeriodicidadPlazo(&quot;@{param6}&quot;);
-opcion.setFormaPagoAbonoCapital(&quot;@{param7}&quot;);
-opcion.setFormaPagoCapital(&quot;@{param8}&quot;);
-opcion.setFormaPagoCustodia(&quot;@{param9}&quot;);
-opcion.setFormaPagoFideicomiso(&quot;@{param10}&quot;);
-opcion.setFormaPagoInteres(&quot;@{param11}&quot;);
-opcion.setFormaPagoMora(&quot;@{param12}&quot;);
-opcion.setFormaPagoGastoCobranza(&quot;@{param13}&quot;);
-opcion.setFormaPagoSeguro(&quot;@{param14}&quot;);
-opcion.setFormaPagoTasador(&quot;@{param15}&quot;);
-opcion.setFormaPagoTransporte(&quot;@{param16}&quot;);
-opcion.setFormaPagoValoracion(&quot;@{param17}&quot;);
-opcion.setTIPO_OFERTA(&quot;@{param18}&quot;);
-opcion.setPORCENTAJE_FLUJO_PLANEADO(Integer.valueOf(@{param19}));
-opcion.setDIVIDENDO_FLUJO_PLANEADO(Integer.valueOf(@{param20}));
-opcion.setDIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO(&quot;@{param21}&quot;);
+          <text>Opcion opcion=new Opcion();opcion.setPlazo(Integer.valueOf(@{param5}));
+opcion.setPeriodoPlazo(&quot;@{param6}&quot;);
+opcion.setPeriodicidadPlazo(&quot;@{param7}&quot;);
+opcion.setFormaPagoAbonoCapital(&quot;@{param8}&quot;);
+opcion.setFormaPagoCapital(&quot;@{param9}&quot;);
+opcion.setFormaPagoCustodia(&quot;@{param10}&quot;);
+opcion.setFormaPagoFideicomiso(&quot;@{param11}&quot;);
+opcion.setFormaPagoInteres(&quot;@{param12}&quot;);
+opcion.setFormaPagoMora(&quot;@{param13}&quot;);
+opcion.setFormaPagoGastoCobranza(&quot;@{param14}&quot;);
+opcion.setFormaPagoSeguro(&quot;@{param15}&quot;);
+opcion.setFormaPagoTasador(&quot;@{param16}&quot;);
+opcion.setFormaPagoTransporte(&quot;@{param17}&quot;);
+opcion.setFormaPagoValoracion(&quot;@{param18}&quot;);
+opcion.setTIPO_OFERTA(&quot;@{param19}&quot;);
+opcion.setPORCENTAJE_FLUJO_PLANEADO(Integer.valueOf(@{param20}));
+opcion.setDIVIDENDO_FLUJO_PLANEADO(Integer.valueOf(@{param21}));
+opcion.setDIVIDENDOS_PRORRATEO_SERVICIOS_DIFERIDO(&quot;@{param22}&quot;);
 opcionRenovacion.getOpcion().add(opcion);</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
@@ -92,126 +100,126 @@ opcionRenovacion.getOpcion().add(opcion);</text>
           <hideColumn>false</hideColumn>
           <width>-1</width>
           <header>PLAZO OFERTA</header>
-          <varName>param4</varName>
-          <fieldType>Object</fieldType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>PERIODO PLAZO</header>
           <varName>param5</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>PERIODICIDAD PLAZO</header>
+          <header>PERIODO PLAZO</header>
           <varName>param6</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO ABONO CAPITAL</header>
+          <header>PERIODICIDAD PLAZO</header>
           <varName>param7</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO CAPITAL</header>
+          <header>FORMA PAGO ABONO CAPITAL</header>
           <varName>param8</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO CUSTODIA</header>
+          <header>FORMA PAGO CAPITAL</header>
           <varName>param9</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO FIDEICOMISO</header>
+          <header>FORMA PAGO CUSTODIA</header>
           <varName>param10</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO INTERES</header>
+          <header>FORMA PAGO FIDEICOMISO</header>
           <varName>param11</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO MORA</header>
+          <header>FORMA PAGO INTERES</header>
           <varName>param12</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO GASTO COBRANZA</header>
+          <header>FORMA PAGO MORA</header>
           <varName>param13</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO SEGURO</header>
+          <header>FORMA PAGO GASTO COBRANZA</header>
           <varName>param14</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO TASADOR</header>
+          <header>FORMA PAGO SEGURO</header>
           <varName>param15</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO TRANSPORTE</header>
+          <header>FORMA PAGO TASADOR</header>
           <varName>param16</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>FORMA PAGO VALORACION</header>
+          <header>FORMA PAGO TRANSPORTE</header>
           <varName>param17</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>TIPO OFERTA</header>
+          <header>FORMA PAGO VALORACION</header>
           <varName>param18</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>PORCENTAJE FLUJO PLANEADO</header>
+          <header>TIPO OFERTA</header>
           <varName>param19</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>DIVIDENDO FLUJO PLANEADO</header>
+          <header>PORCENTAJE FLUJO PLANEADO</header>
           <varName>param20</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>DIVIDENDOS PRORRATEO SERVICIOS DIFERIDO</header>
+          <header>DIVIDENDO FLUJO PLANEADO</header>
           <varName>param21</varName>
+          <fieldType>Object</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>DIVIDENDOS PRORRATEO SERVICIOS DIFERIDO</header>
+          <varName>param22</varName>
           <fieldType>Object</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
@@ -269,6 +277,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -284,7 +297,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -391,6 +404,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -406,7 +424,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -513,6 +531,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -528,7 +551,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -635,6 +658,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -650,7 +678,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -757,6 +785,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -772,7 +805,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -879,6 +912,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>12</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -894,7 +932,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1001,6 +1039,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>18</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1016,7 +1059,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1123,6 +1166,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1138,7 +1186,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1193,7 +1241,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>E</valueString>
+        <valueString>B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1245,6 +1293,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>11</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1260,7 +1313,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1315,7 +1368,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>E</valueString>
+        <valueString>B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1367,6 +1420,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1382,7 +1440,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1489,6 +1547,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1504,7 +1567,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1611,6 +1674,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1626,7 +1694,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1733,6 +1801,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1748,7 +1821,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1855,6 +1928,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1870,7 +1948,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1977,6 +2055,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>12</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -1992,7 +2075,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2099,6 +2182,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>18</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -2114,7 +2202,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2221,6 +2309,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -2236,7 +2329,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2291,7 +2384,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>E</valueString>
+        <valueString>B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2343,6 +2436,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NUE</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>11</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -2358,7 +2456,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>null</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2413,7 +2511,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>E</valueString>
+        <valueString>B</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2461,6 +2559,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2587,6 +2690,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -2705,6 +2813,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -2831,6 +2944,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -2949,6 +3067,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3075,6 +3198,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -3193,6 +3321,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3319,6 +3452,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>12</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -3437,6 +3575,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3563,6 +3706,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>13</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -3681,6 +3829,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -3807,6 +3960,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -3925,6 +4083,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4051,6 +4214,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -4169,6 +4337,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4295,6 +4468,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -4413,6 +4591,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4539,6 +4722,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>11</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -4657,6 +4845,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -4783,6 +4976,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>13</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -4901,6 +5099,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5027,6 +5230,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>18</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -5145,6 +5353,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5271,6 +5484,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -5389,6 +5607,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5515,6 +5738,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>6</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -5633,6 +5861,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -5759,6 +5992,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>9</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -5877,6 +6115,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6003,6 +6246,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>12</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -6121,6 +6369,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6247,6 +6500,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>13</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -6365,6 +6623,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6491,6 +6754,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -6609,6 +6877,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6735,6 +7008,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -6853,6 +7131,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -6979,6 +7262,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>7</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -7097,6 +7385,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7223,6 +7516,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>11</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -7341,6 +7639,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7467,6 +7770,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>13</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -7585,6 +7893,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7711,6 +8024,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>18</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -7818,7 +8136,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MO5</valueString>
+        <valueString>MO3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7833,6 +8151,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -7843,7 +8166,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>M</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7868,12 +8191,12 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7940,7 +8263,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MO5</valueString>
+        <valueString>MO3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7955,6 +8278,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -7965,7 +8293,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>M</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -7990,12 +8318,12 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8062,7 +8390,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MO5</valueString>
+        <valueString>MO3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8077,6 +8405,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>4</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -8087,7 +8420,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>M</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8112,12 +8445,12 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8184,7 +8517,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MO5</valueString>
+        <valueString>MO3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8195,6 +8528,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8234,12 +8572,12 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8306,7 +8644,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MO5</valueString>
+        <valueString>MO3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8321,124 +8659,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>7</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>M</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>F</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>C</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>B</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>90</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>999</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>6</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">68</valueNumeric>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>GrupoPlazos</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>MO5</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>true</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>0</valueString>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8478,12 +8699,139 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">68</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8550,7 +8898,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MO5</valueString>
+        <valueString>MO3</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8560,12 +8908,17 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>0</valueString>
+        <valueString>1500</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>11</valueString>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>18</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8590,22 +8943,12 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>F</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>D</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>D</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8635,12 +8978,22 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>B</valueString>
+        <valueString>C</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>50</valueString>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8687,17 +9040,22 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>12</valueString>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>C</valueString>
+        <valueString>2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>M</valueString>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8809,6 +9167,900 @@ opcionRenovacion.getOpcion().add(opcion);</text>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">72</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>4</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">73</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">74</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>F</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>B</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>90</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">75</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>9</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">76</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>F</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>B</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>50</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">77</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>12</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">78</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO5</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>13</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -8901,7 +10153,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
     </list>
     <list>
       <value>
-        <valueNumeric class="int">72</valueNumeric>
+        <valueNumeric class="int">79</valueNumeric>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -8927,6 +10179,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -9023,7 +10280,7 @@ opcionRenovacion.getOpcion().add(opcion);</text>
     </list>
     <list>
       <value>
-        <valueNumeric class="int">73</valueNumeric>
+        <valueNumeric class="int">80</valueNumeric>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -9049,6 +10306,11 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -9129,6 +10391,260 @@ opcionRenovacion.getOpcion().add(opcion);</text>
       </value>
       <value>
         <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">81</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>7</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>F</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>90</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">82</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>VALOR DE OPCIONES DE PLAZOS</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>GrupoPlazos</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>MO6</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>true</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>NOV</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>11</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>M</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>D</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>F</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>C</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>O</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>50</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
