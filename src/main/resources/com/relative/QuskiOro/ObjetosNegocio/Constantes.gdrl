@@ -31,3 +31,5 @@ global java.lang.String CodigoErrorValoresCreditoNoCuadran;
 global java.lang.String MensajeErrorValoresCreditoNoCuadran;
 global java.lang.Integer PorcentajeFlujoPlaneadoMontoFinanciadoNovacion;
 global java.lang.String ListaPlazosMontoFinanciadoNovacion;
+global java.lang.String CodigoErrorGarantiasNoCuadran;
+global java.lang.String CodigoErrorGarantiaNovacionDistinta;

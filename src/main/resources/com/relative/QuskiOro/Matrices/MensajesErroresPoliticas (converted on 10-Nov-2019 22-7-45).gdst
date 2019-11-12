@@ -121,7 +121,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -168,7 +168,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -215,7 +215,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -262,7 +262,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -309,7 +309,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -356,7 +356,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -403,7 +403,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -450,7 +450,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -497,7 +497,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -544,7 +544,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -591,7 +591,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -638,7 +638,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -685,7 +685,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -732,7 +732,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -779,7 +779,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -826,7 +826,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -873,7 +873,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -920,7 +920,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -967,7 +967,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1014,7 +1014,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1061,7 +1061,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1108,7 +1108,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1155,7 +1155,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1202,7 +1202,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1249,7 +1249,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -1296,7 +1296,7 @@ variablesNegocio.setMensaje(new java.lang.String(variablesNegocio.getMensaje() +
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>GrupoMensajesErrores</valueString>
+        <valueString>GrupoMensajesErroresPoliticas</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

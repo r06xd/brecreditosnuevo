@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_IpEHkAHlEeqCtucbQtQG4Q" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_7ahQMAQ1EeqJlpT_18eR8A" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_CargaItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Carga"/>
   <bpmn2:itemDefinition id="_opcionItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Opcion"/>
   <bpmn2:itemDefinition id="_clienteItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Cliente"/>
@@ -23,6 +23,11 @@
   <bpmn2:itemDefinition id="__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionInputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Opcion"/>
   <bpmn2:itemDefinition id="__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteOutputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Cliente"/>
   <bpmn2:itemDefinition id="__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionOutputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Opcion"/>
+  <bpmn2:itemDefinition id="__356D75DE-6D31-4604-945A-9F4AD640BEEF_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__356D75DE-6D31-4604-945A-9F4AD640BEEF_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__356D75DE-6D31-4604-945A-9F4AD640BEEF_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioInputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioOutputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio"/>
   <bpmn2:itemDefinition id="__C311A382-789D-44FD-B63F-77131CBCC38D_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__C311A382-789D-44FD-B63F-77131CBCC38D_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__C311A382-789D-44FD-B63F-77131CBCC38D_decisionInputXItem" structureRef="java.lang.String"/>
@@ -55,9 +60,9 @@
   <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_decisionInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioInputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio"/>
-  <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultInputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.SimularResult"/>
+  <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteInputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Cliente"/>
   <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioOutputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio"/>
-  <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultOutputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.SimularResult"/>
+  <bpmn2:itemDefinition id="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteOutputXItem" structureRef="com.relative.QuskiOro.ObjetosNegocio.Cliente"/>
   <bpmn2:itemDefinition id="__9238C7E1-C461-498D-A3C7-1126AA073E86_namespaceInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__9238C7E1-C461-498D-A3C7-1126AA073E86_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__9238C7E1-C461-498D-A3C7-1126AA073E86_decisionInputXItem" structureRef="java.lang.String"/>
@@ -118,30 +123,37 @@
     <bpmn2:sequenceFlow id="_9A5A60BA-5432-4855-9DEC-03D2762B45D9" sourceRef="_D18523BB-5DE9-4491-A581-A0BD516ED9CA" targetRef="_D517A05F-F691-4D42-8A8F-494A69B55B01"/>
     <bpmn2:sequenceFlow id="_33D350A0-AD19-4F2C-9E0B-028C91B30644" sourceRef="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E" targetRef="_E67BCD83-291B-495D-934E-BA09CD904CB2"/>
     <bpmn2:sequenceFlow id="_53513360-7B1B-402E-B459-D88CBCF93708" sourceRef="_D517A05F-F691-4D42-8A8F-494A69B55B01" targetRef="_1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuoAHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.greaterOrEqualThan(index, Integer.toString(opcionRenovacion.getOpcion().size()));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQMQQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.greaterOrEqualThan(index, Integer.toString(opcionRenovacion.getOpcion().size()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_3E87B2CC-38C1-45E9-8D6C-220DFC17E495" sourceRef="_082BB60C-B6D4-4BAC-ADC1-3F89F69A4CA2" targetRef="_6E428007-49A2-42A2-90BE-0E195E06BB1D"/>
     <bpmn2:sequenceFlow id="_6690B65F-74A5-4B98-B89F-02F53A61E57A" sourceRef="_D517A05F-F691-4D42-8A8F-494A69B55B01" targetRef="_2AFF2A9E-6783-429E-952B-BA0D9512B2DD">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuoQHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.lessThan(index, Integer.toString(opcionRenovacion.getOpcion().size()));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQMgQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.lessThan(index, Integer.toString(opcionRenovacion.getOpcion().size()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_7E1C2FBF-9A14-4F49-83B3-6F51D0EB3834" sourceRef="_CD85F359-4EB9-43E9-9BE0-F69E7D86A350" targetRef="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E"/>
     <bpmn2:sequenceFlow id="_9138A454-122D-49EC-9D02-C7EE71A79685" sourceRef="_2AFF2A9E-6783-429E-952B-BA0D9512B2DD" targetRef="_CD85F359-4EB9-43E9-9BE0-F69E7D86A350"/>
+    <bpmn2:sequenceFlow id="_5B947B73-A866-44C1-832F-09A99D570787" sourceRef="_1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A" targetRef="_929CC8F2-F8F4-48AC-BA69-8063DDD0C115">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_B5F0EFEE-08DE-4A2B-B204-80B247D15E5B" sourceRef="_FB607C1E-0C03-4046-8638-FD03A8BC9704" targetRef="_082BB60C-B6D4-4BAC-ADC1-3F89F69A4CA2">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.target">
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuogHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isTrue(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQMwQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isTrue(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_E7AD4CED-7986-4DBF-994F-CD3BF4F216D2" sourceRef="_DB6AB50E-473A-49D3-B0D0-C13C9FFAC31E" targetRef="_949D97FC-EC9A-42EA-83F5-380E03BA51DD">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuowHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(variablesNegocio.getDetenerCalculoMontoNovacion());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQNAQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(variablesNegocio.getDetenerCalculoMontoNovacion());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_59AAB889-C4F3-4537-AFF9-D0174888A5D5" sourceRef="_A8BE2ACD-0B36-4959-994F-618B3D706061" targetRef="_949D97FC-EC9A-42EA-83F5-380E03BA51DD">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEupAHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isFalse(variablesNegocio.getRecalcularColateralMontoNovacion());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQNQQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isFalse(variablesNegocio.getRecalcularColateralMontoNovacion());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_BE5C1427-6082-431A-B3D4-1D2AF3C5BC53" sourceRef="_A8BE2ACD-0B36-4959-994F-618B3D706061" targetRef="_082BB60C-B6D4-4BAC-ADC1-3F89F69A4CA2">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEupQHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isTrue(variablesNegocio.getRecalcularColateralMontoNovacion());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQNgQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isTrue(variablesNegocio.getRecalcularColateralMontoNovacion());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_14C22E62-D6BB-4323-9F36-74D953103502" sourceRef="_6C490F19-4E9E-41C7-A165-81C0868CF07E" targetRef="_7C81970E-4C65-4EAB-A1D9-3044B3F66219"/>
     <bpmn2:sequenceFlow id="_6B0C4D9F-163B-4B0E-88CB-0178B3BC9F12" sourceRef="_6E428007-49A2-42A2-90BE-0E195E06BB1D" targetRef="_6C490F19-4E9E-41C7-A165-81C0868CF07E"/>
@@ -161,7 +173,7 @@
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEupgHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isFalse(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQNwQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isFalse(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_ECA3B2AB-50CB-43EC-9824-827DA6183449" sourceRef="_8AF9C039-1FC0-4D52-A393-C5FF98D646DF" targetRef="_6C490F19-4E9E-41C7-A165-81C0868CF07E"/>
     <bpmn2:sequenceFlow id="_1B9D5D2C-9293-4C38-8344-34E7A1A03F0A" sourceRef="_9E665917-234C-461F-9EAC-83D45417BAD2" targetRef="_765BB85E-0324-4039-8B53-A553B8C9ED90"/>
@@ -176,24 +188,24 @@
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_38D33BA3-6B94-43AB-BCD6-A08292F897D6" sourceRef="_DB6AB50E-473A-49D3-B0D0-C13C9FFAC31E" targetRef="_9238C7E1-C461-498D-A3C7-1126AA073E86">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEupwHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(variablesNegocio.getDetenerCalculoMontoNovacion());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQOAQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return KieFunctions.isFalse(variablesNegocio.getDetenerCalculoMontoNovacion());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_C6AADF58-AA5F-4D91-9C1F-62297CB1A7AF" sourceRef="_134A3EB4-88BD-4380-8BCE-A41CFC3BFE35" targetRef="_D8B89449-6FA0-4B36-A1F1-0DB08DFA24AA">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuqAHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  (KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "N" ) || 
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQOQQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  (KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "N" ) || 
 KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "Q" ) ||
 KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "E" ) ||
 KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "R" )
 );]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_86D2E35C-6519-477E-A13C-A85579A27EB7" sourceRef="_134A3EB4-88BD-4380-8BCE-A41CFC3BFE35" targetRef="_AC71CB22-43AD-4C8C-8DC8-BC25227D7B58">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuqQHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "S" );]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQOgQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "S" );]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_AC845312-A639-40A2-A0D2-029B704E5EA7" sourceRef="_F6E1FEF5-AC3F-4334-B1DE-7A424729A684" targetRef="_134A3EB4-88BD-4380-8BCE-A41CFC3BFE35"/>
     <bpmn2:sequenceFlow id="_C98CA53C-9928-43C9-A513-7920C432135F" sourceRef="_4ABE212A-8878-44AE-8B5D-E727F6A6CE77" targetRef="_2AFF2A9E-6783-429E-952B-BA0D9512B2DD">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuqgHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  ( KieFunctions.greaterThan(opcionRenovacion.getOpcion().size(),"0") && KieFunctions.greaterThan(variablesNegocio.getTotalGarantia(),"0"));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQOwQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  ( KieFunctions.greaterThan(opcionRenovacion.getOpcion().size(),"0") && KieFunctions.greaterThan(variablesNegocio.getTotalGarantia(),"0") && KieFunctions.isFalse(variablesNegocio.getDetener()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_BF4AAED1-8593-4A3F-A6C6-68FB812865E3" sourceRef="_4ABE212A-8878-44AE-8B5D-E727F6A6CE77" targetRef="_1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEuqwHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  ( KieFunctions.lessOrEqualThan(opcionRenovacion.getOpcion().size(),"0")  || KieFunctions.lessOrEqualThan(variablesNegocio.getTotalGarantia(),"0.0"));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQPAQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  ( KieFunctions.lessOrEqualThan(opcionRenovacion.getOpcion().size(),"0")  || KieFunctions.lessOrEqualThan(variablesNegocio.getTotalGarantia(),"0.0")  || KieFunctions.isTrue(variablesNegocio.getDetener()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_640FDC30-98C6-4707-90C1-E767BD970697" sourceRef="_B6CD95F9-9278-40D7-94B5-5181355EC066" targetRef="_4ABE212A-8878-44AE-8B5D-E727F6A6CE77">
       <bpmn2:extensionElements>
@@ -204,7 +216,7 @@ KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOr
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_B90EE7B4-23A6-45C0-9B37-2BA01D4C6024" sourceRef="_6A7E0C4E-6918-46E2-9721-AC43CFF297F7" targetRef="_E49D1640-A7B9-4AD9-9C2A-874ADB6A19F7"/>
     <bpmn2:sequenceFlow id="_57EB9B34-3DEE-4D66-8533-F5AF0D244FF9" sourceRef="_765BB85E-0324-4039-8B53-A553B8C9ED90" targetRef="_6A7E0C4E-6918-46E2-9721-AC43CFF297F7">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEurAHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.lessThan(index, Integer.toString(Carga.getXmlGarantias().getGarantias().getGarantia().size()));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQPQQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  (KieFunctions.lessThan(index, Integer.toString(Carga.getXmlGarantias().getGarantias().getGarantia().size())) && KieFunctions.isFalse(variablesNegocio.getDetener()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_4EC7C803-CBED-4836-9D0D-43567FBFA7A1" sourceRef="_7C81970E-4C65-4EAB-A1D9-3044B3F66219" targetRef="_6A7E0C4E-6918-46E2-9721-AC43CFF297F7">
       <bpmn2:extensionElements>
@@ -222,7 +234,7 @@ KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOr
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_BE33B4FC-82BA-4958-AA3E-844FB702BF8F" sourceRef="_AC71CB22-43AD-4C8C-8DC8-BC25227D7B58" targetRef="_FC894492-FB52-4CA1-B693-F4347DA0DFFD"/>
     <bpmn2:sequenceFlow id="_32320438-AE4A-40DD-97C8-3B31AF99EA7C" sourceRef="_710AF29F-85F4-4A70-8315-CE7E9973F3AB" targetRef="_D18523BB-5DE9-4491-A581-A0BD516ED9CA">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpEurQHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  (KieFunctions.lessThan(opcion.getValorARecibir(), Integer.toString((Integer)kcontext.getKnowledgeRuntime().getGlobal("ValorCreditoParaRecalculo"))) || KieFunctions.equalsTo(cliente.getTipo(), "Q" ) || KieFunctions.isTrue(variablesNegocio.getDetenerColateral()));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQPgQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  (KieFunctions.lessThan(opcion.getValorARecibir(), Integer.toString((Integer)kcontext.getKnowledgeRuntime().getGlobal("ValorCreditoParaRecalculo"))) || KieFunctions.equalsTo(cliente.getTipo(), "Q" ) || KieFunctions.isTrue(variablesNegocio.getDetenerColateral()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_E10A605A-D080-4937-943D-866A101D8A62" sourceRef="_710AF29F-85F4-4A70-8315-CE7E9973F3AB" targetRef="_6B13130D-C34E-445B-BEBF-693F6432E3D8">
       <bpmn2:extensionElements>
@@ -230,11 +242,10 @@ KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOr
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpFVsAHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  (KieFunctions.greaterOrEqualThan(opcion.getValorARecibir(), Integer.toString((Integer)kcontext.getKnowledgeRuntime().getGlobal("ValorCreditoParaRecalculo"))) && !KieFunctions.equalsTo(cliente.getTipo(), "Q" ) && KieFunctions.isFalse(variablesNegocio.getDetenerColateral()));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQPwQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  (KieFunctions.greaterOrEqualThan(opcion.getValorARecibir(), Integer.toString((Integer)kcontext.getKnowledgeRuntime().getGlobal("ValorCreditoParaRecalculo"))) && !KieFunctions.equalsTo(cliente.getTipo(), "Q" ) && KieFunctions.isFalse(variablesNegocio.getDetenerColateral()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_F48B65AD-C7A2-40B0-9B6F-D7EDE8CB7470" sourceRef="_84EEAC1A-609B-4D2F-90ED-19CC183B79A5" targetRef="_710AF29F-85F4-4A70-8315-CE7E9973F3AB"/>
     <bpmn2:sequenceFlow id="_E9B6783E-423A-4BE8-8FAF-B0BBD0A6289D" sourceRef="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1" targetRef="_F6E1FEF5-AC3F-4334-B1DE-7A424729A684"/>
-    <bpmn2:sequenceFlow id="_5B947B73-A866-44C1-832F-09A99D570787" sourceRef="_1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A" targetRef="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1"/>
     <bpmn2:sequenceFlow id="_F6B7951D-F046-4122-A0DE-AEDBB1335999" sourceRef="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0" targetRef="_59D176D2-8B21-42AA-9BA0-C94FC3C16436">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
@@ -259,7 +270,7 @@ KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOr
           <drools:metaValue><![CDATA[true]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpFVsQHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.greaterOrEqualThan(index, Integer.toString(Carga.getXmlGarantias().getGarantias().getGarantia().size()));]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQQAQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return ( KieFunctions.greaterOrEqualThan(index, Integer.toString(Carga.getXmlGarantias().getGarantias().getGarantia().size()))  || KieFunctions.isTrue(variablesNegocio.getDetener()));]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_4AAB2C8E-0230-4113-94D0-1813676B999A" sourceRef="_FC894492-FB52-4CA1-B693-F4347DA0DFFD" targetRef="_37162B49-A26D-4290-B19B-1783930E4A5D">
       <bpmn2:extensionElements>
@@ -270,14 +281,14 @@ KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOr
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_E051D8C1-5626-4D2B-9339-3788635DE22F" sourceRef="_F2B8424D-3B5B-492C-9D94-75CBEB7C9B4C" targetRef="_FC894492-FB52-4CA1-B693-F4347DA0DFFD"/>
     <bpmn2:sequenceFlow id="_F1AB840E-7D56-47FC-9353-D2DADAF1A414" sourceRef="_134A3EB4-88BD-4380-8BCE-A41CFC3BFE35" targetRef="_F2B8424D-3B5B-492C-9D94-75CBEB7C9B4C">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpFVsgHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "GG" );]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQQQQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOrigenOperacion(), "GG" );]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_B0E7FD11-284F-4C0F-B677-1424113C849D" sourceRef="_419788A2-284C-4F16-AD9E-F097724695AF" targetRef="_DB6AB50E-473A-49D3-B0D0-C13C9FFAC31E"/>
     <bpmn2:sequenceFlow id="_0B1C1284-A441-4776-98FC-0AB7213B76B3" sourceRef="_FB607C1E-0C03-4046-8638-FD03A8BC9704" targetRef="_419788A2-284C-4F16-AD9E-F097724695AF">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpFVswHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isFalse(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQQgQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return  KieFunctions.isFalse(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_CC5A358D-8026-4A78-9602-F2C3D894DDE8" sourceRef="_59D176D2-8B21-42AA-9BA0-C94FC3C16436" targetRef="_419788A2-284C-4F16-AD9E-F097724695AF">
-      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_IpFVtAHlEeqCtucbQtQG4Q" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
+      <bpmn2:conditionExpression xsi:type="bpmn2:tFormalExpression" id="_7ahQQwQ1EeqJlpT_18eR8A" language="http://www.java.com/java"><![CDATA[return KieFunctions.isTrue(variablesNegocio.getDetenerColateralAdicional());]]></bpmn2:conditionExpression>
     </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_B85D5122-814E-41E3-A6DA-150FD096AD93" sourceRef="_A05B98CA-7075-49B0-A50A-193E60823D96" targetRef="_B6CD95F9-9278-40D7-94B5-5181355EC066">
       <bpmn2:extensionElements>
@@ -292,6 +303,20 @@ KieFunctions.equalsTo(Carga.getXmlParametrosRiesgo().getParametrosRiesgo().getOr
     <bpmn2:sequenceFlow id="_3AF1E0C0-78D8-466D-B054-67A1EE7A69CD" sourceRef="_949D97FC-EC9A-42EA-83F5-380E03BA51DD" targetRef="_A05B98CA-7075-49B0-A50A-193E60823D96"/>
     <bpmn2:sequenceFlow id="_AA3679D0-50A9-4CD8-ACDD-ABE7F2408B47" sourceRef="_C311A382-789D-44FD-B63F-77131CBCC38D" targetRef="_9E665917-234C-461F-9EAC-83D45417BAD2"/>
     <bpmn2:sequenceFlow id="_84155A1B-9BDF-445F-B0AE-7D3C33E885A5" sourceRef="_E49D1640-A7B9-4AD9-9C2A-874ADB6A19F7" targetRef="_C311A382-789D-44FD-B63F-77131CBCC38D"/>
+    <bpmn2:sequenceFlow id="_12324CB7-5FE6-45CE-9A9C-0F62ED7272D8" sourceRef="_356D75DE-6D31-4604-945A-9F4AD640BEEF" targetRef="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_F29FBA11-2902-4086-9EBB-DB892F029552" sourceRef="_929CC8F2-F8F4-48AC-BA69-8063DDD0C115" targetRef="_356D75DE-6D31-4604-945A-9F4AD640BEEF">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
     <bpmn2:sequenceFlow id="_C6BE9902-5EB0-4E4F-B031-46DBA375C352" sourceRef="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE" targetRef="_AB309943-1C31-4544-94BC-AB6547BA643F">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
@@ -441,33 +466,33 @@ TerceraEdadTask]]></drools:metaValue>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_33D350A0-AD19-4F2C-9E0B-028C91B30644</bpmn2:incoming>
       <bpmn2:outgoing>_65CC917E-EB81-4459-ABC6-1A723FED3F77</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpFVtQHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3QAQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_E67BCD83-291B-495D-934E-BA09CD904CB2_opcionInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__E67BCD83-291B-495D-934E-BA09CD904CB2_opcionInputXItem" name="opcion"/>
         <bpmn2:dataInput id="_E67BCD83-291B-495D-934E-BA09CD904CB2_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__E67BCD83-291B-495D-934E-BA09CD904CB2_clienteInputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_E67BCD83-291B-495D-934E-BA09CD904CB2_opcionOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__E67BCD83-291B-495D-934E-BA09CD904CB2_opcionOutputXItem" name="opcion"/>
         <bpmn2:dataOutput id="_E67BCD83-291B-495D-934E-BA09CD904CB2_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__E67BCD83-291B-495D-934E-BA09CD904CB2_clienteOutputXItem" name="cliente"/>
-        <bpmn2:inputSet id="_IpFVtgHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3QQQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_E67BCD83-291B-495D-934E-BA09CD904CB2_opcionInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_E67BCD83-291B-495D-934E-BA09CD904CB2_clienteInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpFVtwHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3QgQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_E67BCD83-291B-495D-934E-BA09CD904CB2_opcionOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_E67BCD83-291B-495D-934E-BA09CD904CB2_clienteOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpFVuAHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3QwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>opcion</bpmn2:sourceRef>
         <bpmn2:targetRef>_E67BCD83-291B-495D-934E-BA09CD904CB2_opcionInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpFVuQHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3RAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_E67BCD83-291B-495D-934E-BA09CD904CB2_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFVugHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3RQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_E67BCD83-291B-495D-934E-BA09CD904CB2_opcionOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>opcion</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFVuwHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3RgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_E67BCD83-291B-495D-934E-BA09CD904CB2_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -482,45 +507,45 @@ ServiciosTask]]></drools:metaValue>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_65CC917E-EB81-4459-ABC6-1A723FED3F77</bpmn2:incoming>
       <bpmn2:outgoing>_F149D599-6C8A-423D-A4C9-76719E141170</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpFVvAHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3RwQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_69991960-AB30-4DD3-8CF8-045639E8D28C_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__69991960-AB30-4DD3-8CF8-045639E8D28C_clienteInputXItem" name="cliente"/>
         <bpmn2:dataInput id="_69991960-AB30-4DD3-8CF8-045639E8D28C_opcionInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__69991960-AB30-4DD3-8CF8-045639E8D28C_opcionInputXItem" name="opcion"/>
         <bpmn2:dataInput id="_69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioInputXItem" name="variablesNegocio"/>
         <bpmn2:dataOutput id="_69991960-AB30-4DD3-8CF8-045639E8D28C_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__69991960-AB30-4DD3-8CF8-045639E8D28C_clienteOutputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_69991960-AB30-4DD3-8CF8-045639E8D28C_opcionOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__69991960-AB30-4DD3-8CF8-045639E8D28C_opcionOutputXItem" name="opcion"/>
         <bpmn2:dataOutput id="_69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:inputSet id="_IpFVvQHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3SAQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_69991960-AB30-4DD3-8CF8-045639E8D28C_clienteInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_69991960-AB30-4DD3-8CF8-045639E8D28C_opcionInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpFVvgHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3SQQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_69991960-AB30-4DD3-8CF8-045639E8D28C_clienteOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_69991960-AB30-4DD3-8CF8-045639E8D28C_opcionOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpFVvwHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3SgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_69991960-AB30-4DD3-8CF8-045639E8D28C_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpFVwAHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3SwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>opcion</bpmn2:sourceRef>
         <bpmn2:targetRef>_69991960-AB30-4DD3-8CF8-045639E8D28C_opcionInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpFVwQHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3TAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFVwgHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3TQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_69991960-AB30-4DD3-8CF8-045639E8D28C_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFVwwHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3TgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_69991960-AB30-4DD3-8CF8-045639E8D28C_opcionOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>opcion</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFVxAHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3TwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_69991960-AB30-4DD3-8CF8-045639E8D28C_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -848,17 +873,19 @@ else{
 if(opcion.getFormaPagoAbonoCapital().equals(kcontext.getKnowledgeRuntime().getGlobal("FormaPagoDesembolso"))){
     //opcion.setAbonoCapital((double)Math.round(montoFinanciadoPlazo-variablesNegocio.getTotalGarantiaOperacionActual())*100)/100);
     if(cliente.getPerfilCliente() == 1 || cliente.getPerfilCliente() == 2){
-        opcion.setAbonoCapital((double)Math.round((opcion.getValorAPagar())*100)/100);
+        opcion.setAbonoCapital(0.0);
     }else if(cliente.getPerfilCliente() == 3){
-        opcion.setAbonoCapital((double)Math.round(((variablesNegocio.getMontoFinanciadoNovacionesAnterior()*0.03) + opcion.getValorAPagar())*100)/100);
+        opcion.setAbonoCapital((double)Math.round((variablesNegocio.getMontoFinanciadoNovacionesAnterior()*0.03)*100)/100);
+        opcion.setValorAPagar((double)Math.round((opcion.getValorAPagar()+opcion.getAbonoCapital())*100)/100);
     }else if(cliente.getPerfilCliente() == 4 || cliente.getPerfilCliente() == 5){
-        opcion.setAbonoCapital((double)Math.round(((variablesNegocio.getMontoFinanciadoNovacionesAnterior()*0.05) + opcion.getValorAPagar())*100)/100);
+        opcion.setAbonoCapital((double)Math.round((variablesNegocio.getMontoFinanciadoNovacionesAnterior()*0.05)*100)/100);
+        opcion.setValorAPagar((double)Math.round((opcion.getValorAPagar()+opcion.getAbonoCapital())*100)/100);
     }else{
-        opcion.setAbonoCapital((double)Math.round((opcion.getValorAPagar())*100)/100);
+        opcion.setAbonoCapital(0.0);
     }
 }
 else{
-    opcion.setAbonoCapital((double)Math.round((opcion.getValorAPagar())*100)/100);
+    opcion.setAbonoCapital(0.0);
 }
 
 
@@ -1043,8 +1070,8 @@ System.out.println("<<<Total garantias: "+variablesNegocio.getTotalGarantia()+">
 com.relative.QuskiOro.ObjetosNegocio.SimularResult simularResultAux = new com.relative.QuskiOro.ObjetosNegocio.SimularResult();
 
 //SETEAMOS LOS VALORES POR DEFECTO DE LOS MENSAJES DE ERROR
-simularResultAux.setCodigoError(variablesNegocio.getCodigoError());
-simularResultAux.setMensaje(variablesNegocio.getMensaje());
+simularResultAux.setCodigoError(variablesNegocio.getCodigoError().equals("0") ? variablesNegocio.getCodigoMensajeErrorConstante() : variablesNegocio.getCodigoError());
+simularResultAux.setMensaje(variablesNegocio.getMensaje().equals("") ? variablesNegocio.getMensajeError() : variablesNegocio.getMensaje());
 simularResultAux.setNumeroOperacionMadre(Carga.getXmlDescuentosNuevaOperacion().getDescuentosOperacion().getNumeroOperacionMadre()==null?"":Carga.getXmlDescuentosNuevaOperacion().getDescuentosOperacion().getNumeroOperacionMadre());
 
 //DECLARACION DE XMLVARIABLESINTERNAS
@@ -1115,12 +1142,9 @@ simularResultAux.setXmlVariablesInternas(variablesInternas);
 //TERMINAMOS DE LLENAR TODO EL OBJETO PRINCIPAL
 System.out.println("<<<Cantidad de errores: "+variablesNegocio.getCodigoPolitica().size()+">>>");
 System.out.println("<<<Cantidad de plazos finales: "+opcionRenovacion.getOpcion().size()+">>>");
-if(simularResultAux.getCodigoError().equals("0") && opcionRenovacion.getOpcion().size() == 0){
-    simularResultAux.setCodigoError((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinCredito"));
-    simularResultAux.setMensaje((String)kcontext.getKnowledgeRuntime().getGlobal("MensajeErrorSinCredito")); 
-}
+
 simularResultAux.setXmlOpcionesRenovacion(new com.relative.QuskiOro.ObjetosNegocio.XmlOpcionesRenovacion());
-if(variablesNegocio.getTotalGarantia() > 0){
+if(variablesNegocio.getTotalGarantia() > 0 && simularResultAux.getMensaje().equals("")){
 
     java.util.Iterator iterator = opcionRenovacion.getOpcion().iterator(); 
     while (iterator.hasNext()) 
@@ -1132,11 +1156,7 @@ if(variablesNegocio.getTotalGarantia() > 0){
     System.out.println("<<<Cantidad de plazos finales despues de iterar: "+opcionRenovacion.getOpcion().size()+">>>");
     simularResultAux.getXmlOpcionesRenovacion().setOpcionesRenovacion(opcionRenovacion);
 }
-/*
-if(simularResultAux.getCodigoError().equals("0") && variablesNegocio.getTotalGarantia() == 0){
-    simularResultAux.setCodigoError((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinGarantia"));
-    simularResultAux.setMensaje((String)kcontext.getKnowledgeRuntime().getGlobal("MensajeErrorSinGarantia")); 
-}*/
+
 simularResultAux.setXmlGarantias(Carga.getXmlGarantias());
 
 //MAPEAMOS TODOS LOS DATOS OBTENIDOS EN EL PROCESO
@@ -1157,33 +1177,33 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_7E1C2FBF-9A14-4F49-83B3-6F51D0EB3834</bpmn2:incoming>
       <bpmn2:outgoing>_33D350A0-AD19-4F2C-9E0B-028C91B30644</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpFVxQHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3UAQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionInputXItem" name="opcion"/>
         <bpmn2:dataInput id="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioInputXItem" name="variablesNegocio"/>
         <bpmn2:dataOutput id="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionOutputXItem" name="opcion"/>
         <bpmn2:dataOutput id="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:inputSet id="_IpFVxgHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3UQQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpFVxwHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3UgQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpFVyAHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3UwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>opcion</bpmn2:sourceRef>
         <bpmn2:targetRef>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpFVyQHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3VAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFVygHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3VQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_opcionOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>opcion</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFVywHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3VgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_00EF2216-7973-47C5-B4FF-1F78ACCDA92E_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -1239,17 +1259,13 @@ kcontext.setVariable("index",(index+1));
 com.relative.QuskiOro.ObjetosNegocio.SimularResultSimulation simularResultSimulation = new com.relative.QuskiOro.ObjetosNegocio.SimularResultSimulation();
 
 //SETEAMOS LOS VALORES POR DEFECTO DE LOS MENSAJES DE ERROR
-simularResultSimulation.setCodigoError(variablesNegocio.getCodigoError());
-simularResultSimulation.setMensaje(variablesNegocio.getMensaje());
+simularResultSimulation.setCodigoError(variablesNegocio.getCodigoError().equals("0") ? variablesNegocio.getCodigoMensajeErrorConstante() : variablesNegocio.getCodigoError());
+simularResultSimulation.setMensaje(variablesNegocio.getMensaje().equals("") ? variablesNegocio.getMensajeError() : variablesNegocio.getMensaje());
 simularResultSimulation.setNumeroOperacionMadre("");
 
 //TERMINAMOS DE LLENAR TODO EL OBJETO PRINCIPAL
 System.out.println("<<<Cantidad de errores: "+variablesNegocio.getCodigoPolitica().size()+">>>");
 System.out.println("<<<Cantidad de plazos finales: "+opcionRenovacion.getOpcion().size()+">>>");
-if(simularResultSimulation.getCodigoError().equals("0") && opcionRenovacion.getOpcion().size() == 0){
-    simularResultSimulation.setCodigoError((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinCredito"));
-    simularResultSimulation.setMensaje((String)kcontext.getKnowledgeRuntime().getGlobal("MensajeErrorSinCredito")); 
-}
 
 //CREAMOS EL OBJETO DE SIMULACION BASE A LAS OPCIONES DE CREDITOS OBTENIDAS
 java.util.ArrayList<com.relative.QuskiOro.ObjetosNegocio.OpcionSimulada> listaOpcionSimulada = new java.util.ArrayList<com.relative.QuskiOro.ObjetosNegocio.OpcionSimulada>();
@@ -1257,7 +1273,7 @@ com.relative.QuskiOro.ObjetosNegocio.OpcionSimulada opcionSimulada = new com.rel
 simularResultSimulation.setXmlOfertasSimuladas(new com.relative.QuskiOro.ObjetosNegocio.XmlOfertasSimuladas());
 simularResultSimulation.getXmlOfertasSimuladas().setOfertasSimuladas(new com.relative.QuskiOro.ObjetosNegocio.OfertasSimuladas());
 
-if(variablesNegocio.getTotalGarantia() > 0){
+if(variablesNegocio.getTotalGarantia() > 0 && simularResultSimulation.getMensaje().equals("")){
     Double riesgoTotal = ((double)Math.round((Carga.getXmlVariablesInternas().getVariablesInternas().getRiesgoAcumulado() + variablesNegocio.getTotalGarantia())*100)/100);
 
     for(com.relative.QuskiOro.ObjetosNegocio.Opcion opcionAux : opcionRenovacion.getOpcion()){
@@ -1272,11 +1288,6 @@ if(variablesNegocio.getTotalGarantia() > 0){
         listaOpcionSimulada.add(opcionSimulada);
     }
 }else{
-    /*
-    if(simularResultSimulation.getCodigoError().equals("0") && variablesNegocio.getTotalGarantia() == 0){
-    simularResultSimulation.setCodigoError((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinGarantia"));
-    simularResultSimulation.setMensaje((String)kcontext.getKnowledgeRuntime().getGlobal("MensajeErrorSinGarantia")); 
-    }*/
     opcionSimulada = new com.relative.QuskiOro.ObjetosNegocio.OpcionSimulada(
         null,
         null,
@@ -1299,6 +1310,26 @@ String xml = org.json.XML.toString(jsonOb);
 System.out.println(xml);
 salida = xml;
 kcontext.setVariable("salida",salida);]]></bpmn2:script>
+    </bpmn2:scriptTask>
+    <bpmn2:scriptTask id="_929CC8F2-F8F4-48AC-BA69-8063DDD0C115" name="Validaciones
+FinalesTask" scriptFormat="http://www.java.com/java">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Validaciones
+FinalesTask]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_5B947B73-A866-44C1-832F-09A99D570787</bpmn2:incoming>
+      <bpmn2:outgoing>_F29FBA11-2902-4086-9EBB-DB892F029552</bpmn2:outgoing>
+      <bpmn2:script><![CDATA[if(opcionRenovacion.getOpcion().size() == 0){
+    variablesNegocio.setCodigoMensajeErrorConstante((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinCredito"));
+    variablesNegocio.setCodigoMensajeError("1"); 
+}
+/*
+if(variablesNegocio.getTotalGarantia() == 0){
+    variablesNegocio.setCodigoMensajeErrorConstante((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinGarantia"));
+    variablesNegocio.setCodigoMensajeError("2"); 
+}*/]]></bpmn2:script>
     </bpmn2:scriptTask>
     <bpmn2:exclusiveGateway id="_FB607C1E-0C03-4046-8638-FD03A8BC9704" gatewayDirection="Diverging">
       <bpmn2:incoming>_568F78D7-7B37-41D3-9D55-C070F6814484</bpmn2:incoming>
@@ -1327,6 +1358,12 @@ System.out.println("<<<Perfil Anterior Restado: "+cliente.getPerfilAnterior()+">
 System.out.println("<<<TotalGarantia (monto financiado): "+variablesNegocio.getTotalGarantia()+">>>");
 System.out.println("<<<Monto financiado final: "+variablesNegocio.getMontoFinanciadoNovaciones()+">>>");
 System.out.println("<<<Monto financiado anterior: "+variablesNegocio.getMontoFinanciadoNovacionesAnterior()+">>>");
+
+if(variablesNegocio.getTipoOperacion().equals("NOV") && cliente.getPesoNetoCredOrigen() - variablesNegocio.getTotalPeso() != 0){
+    variablesNegocio.setCodigoMensajeErrorConstante((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorGarantiaNovacionDistinta"));
+    variablesNegocio.setCodigoMensajeError("4"); 
+    variablesNegocio.setDetener(true);
+}
 
 ////SI EXISTE VALOR EN MONTOSOLICITADOCLIENTE SETEAMOS EL TOTAL GARANTIA CON DICHO VALOR
 if(variablesNegocio.getMontoSolicitadoCliente() > 0.0){
@@ -1379,33 +1416,33 @@ System.out.println("<<<Colateral adicional: "+cliente.getColateralAdicional()+">
       </bpmn2:extensionElements>
       <bpmn2:incoming>_09E7597B-E0FF-4F94-B929-AD780FFFBC8E</bpmn2:incoming>
       <bpmn2:outgoing>_568F78D7-7B37-41D3-9D55-C070F6814484</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpFVzAHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3VwQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteInputXItem" name="cliente"/>
         <bpmn2:dataInput id="_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioInputXItem" name="variablesNegocio"/>
         <bpmn2:dataOutput id="_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteOutputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:inputSet id="_IpFVzQHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3WAQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpFVzgHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3WQQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpFVzwHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3WgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpFV0AHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3WwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFV0QHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3XAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpFV0gHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3XQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_F0536E60-EAAD-41E9-80D7-24EB0FCA8291_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -1501,6 +1538,13 @@ GarantiaTask]]></drools:metaValue>
       <bpmn2:script><![CDATA[//SETEAMOS NUESTRO OBJETO GARANTIA AUXILIAR PARA GESTIONARLO EN EL PROCESO, CON CADA UNA DE LAS GARANTIAS DE LA LISTA
 garantia = Carga.getXmlGarantias().getGarantias().getGarantia().get(index);
 kcontext.setVariable("garantia",Carga.getXmlGarantias().getGarantias().getGarantia().get(index));
+
+if(garantia.getPesoGr() - garantia.getDescuentoPesoPiedras() < 0){
+    variablesNegocio.setCodigoMensajeErrorConstante((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorGarantiasNoCuadran"));
+    variablesNegocio.setCodigoMensajeError("3"); 
+    variablesNegocio.setDetener(true);
+}
+
 System.out.println("<<< Tipo Oro Garantia: "+garantia.getTipoOroKilataje()+">>>");
 System.out.println("<<< Tipo Joya Garantia: "+garantia.getTipoJoya()+">>>");
 System.out.println("<<< Descripcion Garantia: "+garantia.getDescripcion()+">>>");
@@ -1530,33 +1574,33 @@ NovacionesTask]]></drools:metaValue>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_38D33BA3-6B94-43AB-BCD6-A08292F897D6</bpmn2:incoming>
       <bpmn2:outgoing>_948BF193-8AEE-4236-81F0-7EB9184B5057</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpFV0wHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3XgQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_9238C7E1-C461-498D-A3C7-1126AA073E86_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__9238C7E1-C461-498D-A3C7-1126AA073E86_clienteInputXItem" name="cliente"/>
         <bpmn2:dataInput id="_9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioInputXItem" name="variablesNegocio"/>
         <bpmn2:dataOutput id="_9238C7E1-C461-498D-A3C7-1126AA073E86_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__9238C7E1-C461-498D-A3C7-1126AA073E86_clienteOutputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:inputSet id="_IpFV1AHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3XwQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_9238C7E1-C461-498D-A3C7-1126AA073E86_clienteInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpF8wAHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3YAQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_9238C7E1-C461-498D-A3C7-1126AA073E86_clienteOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpF8wQHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3YQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_9238C7E1-C461-498D-A3C7-1126AA073E86_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpF8wgHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3YgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF8wwHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3YwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_9238C7E1-C461-498D-A3C7-1126AA073E86_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF8xAHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3ZAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_9238C7E1-C461-498D-A3C7-1126AA073E86_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -1580,6 +1624,8 @@ ErroresTask]]></drools:metaValue>
       <bpmn2:script><![CDATA[System.out.println("<<<Politica bloqueo: "+variablesNegocio.getCodigoPoliticaBloqueo()+">>>");
 System.out.println("<<<Codigos errores: "+variablesNegocio.getCodigoError()+">>>");
 System.out.println("<<<Mensajes errores: "+variablesNegocio.getMensaje()+">>>");
+System.out.println("<<<Codigos errores generales: "+variablesNegocio.getCodigoMensajeError()+">>>");
+System.out.println("<<<Mensajes errores generales: "+variablesNegocio.getMensajeError()+">>>");
 
 //SI NO PASO LA POLITICA DE CLIENTEBLOQUEADO GESTIONAMOS PARA AGREGARLAS A LA SALIDA
 if(variablesNegocio.getCodigoPoliticaBloqueo().equals(kcontext.getKnowledgeRuntime().getGlobal("ClienteBloqueado"))){
@@ -1632,45 +1678,45 @@ System.out.println("<<<Errores concatenados3: "+variablesNegocio.getMensaje()+">
       <bpmn2:outgoing>_E10A605A-D080-4937-943D-866A101D8A62</bpmn2:outgoing>
       <bpmn2:outgoing>_32320438-AE4A-40DD-97C8-3B31AF99EA7C</bpmn2:outgoing>
     </bpmn2:exclusiveGateway>
-    <bpmn2:businessRuleTask id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1" drools:ruleFlowGroup="GrupoMensajesErrores" name="Mensajes
-ErroresTask" implementation="http://www.jboss.org/drools/rule">
+    <bpmn2:businessRuleTask id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1" drools:ruleFlowGroup="GrupoMensajesErroresPoliticas" name="Mensajes
+ErroresPoliticasTask" implementation="http://www.jboss.org/drools/rule">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Mensajes
-ErroresTask]]></drools:metaValue>
+ErroresPoliticasTask]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
-      <bpmn2:incoming>_5B947B73-A866-44C1-832F-09A99D570787</bpmn2:incoming>
+      <bpmn2:incoming>_12324CB7-5FE6-45CE-9A9C-0F62ED7272D8</bpmn2:incoming>
       <bpmn2:outgoing>_E9B6783E-423A-4BE8-8FAF-B0BBD0A6289D</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpF8xQHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3ZQQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioInputXItem" name="variablesNegocio"/>
-        <bpmn2:dataInput id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.SimularResult" itemSubjectRef="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultInputXItem" name="simularResult"/>
+        <bpmn2:dataInput id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteInputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:dataOutput id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.SimularResult" itemSubjectRef="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultOutputXItem" name="simularResult"/>
-        <bpmn2:inputSet id="_IpF8xgHlEeqCtucbQtQG4Q">
+        <bpmn2:dataOutput id="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteOutputXItem" name="cliente"/>
+        <bpmn2:inputSet id="_7ah3ZgQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioInputX</bpmn2:dataInputRefs>
-          <bpmn2:dataInputRefs>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpF8xwHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3ZwQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioOutputX</bpmn2:dataOutputRefs>
-          <bpmn2:dataOutputRefs>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpF8yAHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3aAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpF8yQHlEeqCtucbQtQG4Q">
-        <bpmn2:sourceRef>simularResult</bpmn2:sourceRef>
-        <bpmn2:targetRef>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultInputX</bpmn2:targetRef>
+      <bpmn2:dataInputAssociation id="_7ah3aQQ1EeqJlpT_18eR8A">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF8ygHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3agQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF8ywHlEeqCtucbQtQG4Q">
-        <bpmn2:sourceRef>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_simularResultOutputX</bpmn2:sourceRef>
-        <bpmn2:targetRef>simularResult</bpmn2:targetRef>
+      <bpmn2:dataOutputAssociation id="_7ah3awQ1EeqJlpT_18eR8A">
+        <bpmn2:sourceRef>_C7498481-B8C8-4DD3-83E9-87F0B706A3F1_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
     <bpmn2:businessRuleTask id="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0" drools:ruleFlowGroup="PoliticaR17" name="PoliticaR17" implementation="http://www.jboss.org/drools/rule">
@@ -1681,33 +1727,33 @@ ErroresTask]]></drools:metaValue>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_B3EFF2CC-F6C9-4EE7-9081-D590FC0A52AE</bpmn2:incoming>
       <bpmn2:outgoing>_F6B7951D-F046-4122-A0DE-AEDBB1335999</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpF8zAHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3bAQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteInputXItem" name="cliente"/>
         <bpmn2:dataInput id="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioInputXItem" name="variablesNegocio"/>
         <bpmn2:dataOutput id="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteOutputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:inputSet id="_IpF8zQHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3bQQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpF8zgHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3bgQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpF8zwHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3bwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpF80AHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3cAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF80QHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3cQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF80gHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3cgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_DE16DFFB-E307-46D8-A22C-ACE75BE340E0_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -1720,40 +1766,40 @@ ErroresTask]]></drools:metaValue>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_16FBED1F-7A1E-42FF-970C-E7085767C84B</bpmn2:incoming>
       <bpmn2:outgoing>_FBB37C42-0812-4D90-9844-BAB0AC55D79F</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpF80wHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3cwQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_8E9A8E05-1644-417C-97F8-221E7C538E41_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__8E9A8E05-1644-417C-97F8-221E7C538E41_clienteInputXItem" name="cliente"/>
         <bpmn2:dataInput id="_8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioInputXItem" name="variablesNegocio"/>
         <bpmn2:dataOutput id="_8E9A8E05-1644-417C-97F8-221E7C538E41_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__8E9A8E05-1644-417C-97F8-221E7C538E41_clienteOutputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:inputSet id="_IpF81AHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3dAQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_8E9A8E05-1644-417C-97F8-221E7C538E41_clienteInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpF81QHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3dQQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_8E9A8E05-1644-417C-97F8-221E7C538E41_clienteOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpF81gHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3dgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_8E9A8E05-1644-417C-97F8-221E7C538E41_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpF81wHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3dwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF82AHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3eAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_8E9A8E05-1644-417C-97F8-221E7C538E41_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF82QHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3eQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_8E9A8E05-1644-417C-97F8-221E7C538E41_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
     <bpmn2:endEvent id="_37162B49-A26D-4290-B19B-1783930E4A5D">
       <bpmn2:incoming>_4AAB2C8E-0230-4113-94D0-1813676B999A</bpmn2:incoming>
-      <bpmn2:terminateEventDefinition id="_IpF82gHlEeqCtucbQtQG4Q"/>
+      <bpmn2:terminateEventDefinition id="_7ah3egQ1EeqJlpT_18eR8A"/>
     </bpmn2:endEvent>
     <bpmn2:scriptTask id="_F2B8424D-3B5B-492C-9D94-75CBEB7C9B4C" name="MapGuardar
 GarantiasTask" scriptFormat="http://www.java.com/java">
@@ -1769,22 +1815,14 @@ GarantiasTask]]></drools:metaValue>
 com.relative.QuskiOro.ObjetosNegocio.SimularResult simularResultGarantias = new com.relative.QuskiOro.ObjetosNegocio.SimularResult();
 
 //SETEAMOS LOS VALORES POR DEFECTO DE LOS MENSAJES DE ERROR
-simularResultGarantias.setCodigoError(variablesNegocio.getCodigoError());
-simularResultGarantias.setMensaje(variablesNegocio.getMensaje());
+simularResultGarantias.setCodigoError(variablesNegocio.getCodigoError().equals("0") ? variablesNegocio.getCodigoMensajeErrorConstante() : variablesNegocio.getCodigoError());
+simularResultGarantias.setMensaje(variablesNegocio.getMensaje().equals("") ? variablesNegocio.getMensajeError() : variablesNegocio.getMensaje());
 simularResultGarantias.setNumeroOperacionMadre("");
 
 //TERMINAMOS DE LLENAR TODO EL OBJETO PRINCIPAL
 System.out.println("<<<Cantidad de errores: "+variablesNegocio.getCodigoPolitica().size()+">>>");
 System.out.println("<<<Cantidad de plazos finales: "+opcionRenovacion.getOpcion().size()+">>>");
-if(simularResultGarantias.getCodigoError().equals("0") && opcionRenovacion.getOpcion().size() == 0){
-    simularResultGarantias.setCodigoError((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinCredito"));
-    simularResultGarantias.setMensaje((String)kcontext.getKnowledgeRuntime().getGlobal("MensajeErrorSinCredito")); 
-}
-/*
-if(simularResultGarantias.getCodigoError().equals("0") && variablesNegocio.getTotalGarantia() == 0){
-    simularResultGarantias.setCodigoError((String)kcontext.getKnowledgeRuntime().getGlobal("CodigoErrorSinGarantia"));
-    simularResultGarantias.setMensaje((String)kcontext.getKnowledgeRuntime().getGlobal("MensajeErrorSinGarantia")); 
-}*/
+
 simularResultGarantias.setXmlGarantias(Carga.getXmlGarantias());
 
 //MAPEAMOS TODOS LOS DATOS OBTENIDOS EN EL PROCESO
@@ -1810,45 +1848,45 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_3AF1E0C0-78D8-466D-B054-67A1EE7A69CD</bpmn2:incoming>
       <bpmn2:outgoing>_B85D5122-814E-41E3-A6DA-150FD096AD93</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpF82wHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3ewQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.OpcionesRenovacion" itemSubjectRef="__A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionInputXItem" name="opcionRenovacion"/>
         <bpmn2:dataInput id="_A05B98CA-7075-49B0-A50A-193E60823D96_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__A05B98CA-7075-49B0-A50A-193E60823D96_clienteInputXItem" name="cliente"/>
         <bpmn2:dataInput id="_A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioInputXItem" name="variablesNegocio"/>
         <bpmn2:dataOutput id="_A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.OpcionesRenovacion" itemSubjectRef="__A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionOutputXItem" name="opcionRenovacion"/>
         <bpmn2:dataOutput id="_A05B98CA-7075-49B0-A50A-193E60823D96_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__A05B98CA-7075-49B0-A50A-193E60823D96_clienteOutputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioOutputXItem" name="variablesNegocio"/>
-        <bpmn2:inputSet id="_IpF83AHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3fAQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_A05B98CA-7075-49B0-A50A-193E60823D96_clienteInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpF83QHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3fQQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_A05B98CA-7075-49B0-A50A-193E60823D96_clienteOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpF83gHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3fgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>opcionRenovacion</bpmn2:sourceRef>
         <bpmn2:targetRef>_A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpF83wHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3fwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_A05B98CA-7075-49B0-A50A-193E60823D96_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpF84AHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3gAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
         <bpmn2:targetRef>_A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF84QHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3gQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_A05B98CA-7075-49B0-A50A-193E60823D96_opcionRenovacionOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>opcionRenovacion</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF84gHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3ggQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_A05B98CA-7075-49B0-A50A-193E60823D96_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF84wHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3gwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_A05B98CA-7075-49B0-A50A-193E60823D96_variablesNegocioOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -1861,23 +1899,52 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_84155A1B-9BDF-445F-B0AE-7D3C33E885A5</bpmn2:incoming>
       <bpmn2:outgoing>_AA3679D0-50A9-4CD8-ACDD-ABE7F2408B47</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpF85AHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3hAQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_C311A382-789D-44FD-B63F-77131CBCC38D_garantiaInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Garantia" itemSubjectRef="__C311A382-789D-44FD-B63F-77131CBCC38D_garantiaInputXItem" name="garantia"/>
         <bpmn2:dataOutput id="_C311A382-789D-44FD-B63F-77131CBCC38D_garantiaOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Garantia" itemSubjectRef="__C311A382-789D-44FD-B63F-77131CBCC38D_garantiaOutputXItem" name="garantia"/>
-        <bpmn2:inputSet id="_IpF85QHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3hQQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_C311A382-789D-44FD-B63F-77131CBCC38D_garantiaInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpF85gHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3hgQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_C311A382-789D-44FD-B63F-77131CBCC38D_garantiaOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpF85wHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3hwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>garantia</bpmn2:sourceRef>
         <bpmn2:targetRef>_C311A382-789D-44FD-B63F-77131CBCC38D_garantiaInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF86AHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3iAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_C311A382-789D-44FD-B63F-77131CBCC38D_garantiaOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>garantia</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_356D75DE-6D31-4604-945A-9F4AD640BEEF" drools:ruleFlowGroup="GrupoMensajesErrores" name="Mensajes
+ErroresTask" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Mensajes
+ErroresTask]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_F29FBA11-2902-4086-9EBB-DB892F029552</bpmn2:incoming>
+      <bpmn2:outgoing>_12324CB7-5FE6-45CE-9A9C-0F62ED7272D8</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_7ah3iQQ1EeqJlpT_18eR8A">
+        <bpmn2:dataInput id="_356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_7ah3igQ1EeqJlpT_18eR8A">
+          <bpmn2:dataInputRefs>_356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_7ah3iwQ1EeqJlpT_18eR8A">
+          <bpmn2:dataOutputRefs>_356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_7ah3jAQ1EeqJlpT_18eR8A">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_7ah3jQQ1EeqJlpT_18eR8A">
+        <bpmn2:sourceRef>_356D75DE-6D31-4604-945A-9F4AD640BEEF_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
     <bpmn2:businessRuleTask id="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE" drools:ruleFlowGroup="GrupoColateralClienteExterno" name="ColateralExternoTask" implementation="http://www.jboss.org/drools/rule">
@@ -1888,42 +1955,45 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_EDD68CDE-FA39-4B5C-85EA-E37C2BD7D457</bpmn2:incoming>
       <bpmn2:outgoing>_C6BE9902-5EB0-4E4F-B031-46DBA375C352</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_IpF86QHlEeqCtucbQtQG4Q">
+      <bpmn2:ioSpecification id="_7ah3jgQ1EeqJlpT_18eR8A">
         <bpmn2:dataInput id="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteInputXItem" name="cliente"/>
         <bpmn2:dataInput id="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionInputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionInputXItem" name="opcion"/>
         <bpmn2:dataOutput id="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Cliente" itemSubjectRef="__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteOutputXItem" name="cliente"/>
         <bpmn2:dataOutput id="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionOutputX" drools:dtype="com.relative.QuskiOro.ObjetosNegocio.Opcion" itemSubjectRef="__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionOutputXItem" name="opcion"/>
-        <bpmn2:inputSet id="_IpF86gHlEeqCtucbQtQG4Q">
+        <bpmn2:inputSet id="_7ah3jwQ1EeqJlpT_18eR8A">
           <bpmn2:dataInputRefs>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_IpF86wHlEeqCtucbQtQG4Q">
+        <bpmn2:outputSet id="_7ah3kAQ1EeqJlpT_18eR8A">
           <bpmn2:dataOutputRefs>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteOutputX</bpmn2:dataOutputRefs>
           <bpmn2:dataOutputRefs>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_IpF87AHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3kQQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
         <bpmn2:targetRef>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataInputAssociation id="_IpF87QHlEeqCtucbQtQG4Q">
+      <bpmn2:dataInputAssociation id="_7ah3kgQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>opcion</bpmn2:sourceRef>
         <bpmn2:targetRef>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF87gHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3kwQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_clienteOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>cliente</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
-      <bpmn2:dataOutputAssociation id="_IpF87wHlEeqCtucbQtQG4Q">
+      <bpmn2:dataOutputAssociation id="_7ah3lAQ1EeqJlpT_18eR8A">
         <bpmn2:sourceRef>_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_opcionOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>opcion</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
     </bpmn2:businessRuleTask>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_IpF88AHlEeqCtucbQtQG4Q">
-    <bpmndi:BPMNPlane id="_IpF88QHlEeqCtucbQtQG4Q" bpmnElement="QuskiOro.FlujoNovacion">
+  <bpmndi:BPMNDiagram id="_7ah3lQQ1EeqJlpT_18eR8A">
+    <bpmndi:BPMNPlane id="_7ah3lgQ1EeqJlpT_18eR8A" bpmnElement="QuskiOro.FlujoNovacion">
       <bpmndi:BPMNShape id="shape__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE" bpmnElement="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE">
         <dc:Bounds height="102.0" width="154.0" x="84.0" y="352.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__356D75DE-6D31-4604-945A-9F4AD640BEEF" bpmnElement="_356D75DE-6D31-4604-945A-9F4AD640BEEF">
+        <dc:Bounds height="102.0" width="154.0" x="723.0" y="874.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__C311A382-789D-44FD-B63F-77131CBCC38D" bpmnElement="_C311A382-789D-44FD-B63F-77131CBCC38D">
         <dc:Bounds height="50.0" width="191.04175" x="477.47913" y="221.0"/>
@@ -1947,10 +2017,10 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <dc:Bounds height="102.0" width="154.0" x="1236.0" y="29.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__C7498481-B8C8-4DD3-83E9-87F0B706A3F1" bpmnElement="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1">
-        <dc:Bounds height="102.0" width="154.0" x="678.0" y="874.0"/>
+        <dc:Bounds height="102.0" width="154.0" x="533.0" y="874.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__710AF29F-85F4-4A70-8315-CE7E9973F3AB" bpmnElement="_710AF29F-85F4-4A70-8315-CE7E9973F3AB">
-        <dc:Bounds height="56.0" width="56.0" x="336.0" y="738.0"/>
+        <dc:Bounds height="56.0" width="56.0" x="336.0" y="698.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__FC894492-FB52-4CA1-B693-F4347DA0DFFD" bpmnElement="_FC894492-FB52-4CA1-B693-F4347DA0DFFD">
         <dc:Bounds height="56.0" width="56.0" x="401.0" y="1241.0"/>
@@ -2003,6 +2073,9 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
       <bpmndi:BPMNShape id="shape__FB607C1E-0C03-4046-8638-FD03A8BC9704" bpmnElement="_FB607C1E-0C03-4046-8638-FD03A8BC9704">
         <dc:Bounds height="56.0" width="56.0" x="1093.0" y="181.0"/>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__929CC8F2-F8F4-48AC-BA69-8063DDD0C115" bpmnElement="_929CC8F2-F8F4-48AC-BA69-8063DDD0C115">
+        <dc:Bounds height="102.0" width="154.0" x="912.0" y="872.0"/>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__AC71CB22-43AD-4C8C-8DC8-BC25227D7B58" bpmnElement="_AC71CB22-43AD-4C8C-8DC8-BC25227D7B58">
         <dc:Bounds height="102.0" width="154.0" x="137.0" y="1091.0"/>
       </bpmndi:BPMNShape>
@@ -2019,7 +2092,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <dc:Bounds height="56.0" width="56.0" x="945.0" y="286.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A" bpmnElement="_1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A">
-        <dc:Bounds height="56.0" width="56.0" x="863.0" y="895.0"/>
+        <dc:Bounds height="56.0" width="56.0" x="1125.0" y="895.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__00EF2216-7973-47C5-B4FF-1F78ACCDA92E" bpmnElement="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E">
         <dc:Bounds height="102.0" width="154.0" x="1846.0" y="576.0"/>
@@ -2028,7 +2101,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <dc:Bounds height="102.0" width="154.0" x="352.0" y="1091.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__D517A05F-F691-4D42-8A8F-494A69B55B01" bpmnElement="_D517A05F-F691-4D42-8A8F-494A69B55B01">
-        <dc:Bounds height="56.0" width="56.0" x="938.0" y="846.0"/>
+        <dc:Bounds height="56.0" width="56.0" x="1125.0" y="813.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__B6CD95F9-9278-40D7-94B5-5181355EC066" bpmnElement="_B6CD95F9-9278-40D7-94B5-5181355EC066">
         <dc:Bounds height="104.0" width="157.0" x="2094.0" y="27.0"/>
@@ -2049,7 +2122,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <dc:Bounds height="106.0" width="154.0" x="84.0" y="211.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__D18523BB-5DE9-4491-A581-A0BD516ED9CA" bpmnElement="_D18523BB-5DE9-4491-A581-A0BD516ED9CA">
-        <dc:Bounds height="102.0" width="154.0" x="889.0" y="715.0"/>
+        <dc:Bounds height="102.0" width="154.0" x="1074.0" y="675.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__949D97FC-EC9A-42EA-83F5-380E03BA51DD" bpmnElement="_949D97FC-EC9A-42EA-83F5-380E03BA51DD">
         <dc:Bounds height="56.0" width="56.0" x="1802.0" y="51.0"/>
@@ -2064,6 +2137,14 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
       <bpmndi:BPMNEdge id="edge_shape__C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE_to_shape__AB309943-1C31-4544-94BC-AB6547BA643F" bpmnElement="_C6BE9902-5EB0-4E4F-B031-46DBA375C352">
         <di:waypoint xsi:type="dc:Point" x="161.0" y="352.0"/>
         <di:waypoint xsi:type="dc:Point" x="161.0" y="317.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__929CC8F2-F8F4-48AC-BA69-8063DDD0C115_to_shape__356D75DE-6D31-4604-945A-9F4AD640BEEF" bpmnElement="_F29FBA11-2902-4086-9EBB-DB892F029552">
+        <di:waypoint xsi:type="dc:Point" x="989.0" y="923.0"/>
+        <di:waypoint xsi:type="dc:Point" x="877.0" y="925.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__356D75DE-6D31-4604-945A-9F4AD640BEEF_to_shape__C7498481-B8C8-4DD3-83E9-87F0B706A3F1" bpmnElement="_12324CB7-5FE6-45CE-9A9C-0F62ED7272D8">
+        <di:waypoint xsi:type="dc:Point" x="800.0" y="925.0"/>
+        <di:waypoint xsi:type="dc:Point" x="687.0" y="925.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__E49D1640-A7B9-4AD9-9C2A-874ADB6A19F7_to_shape__C311A382-789D-44FD-B63F-77131CBCC38D" bpmnElement="_84155A1B-9BDF-445F-B0AE-7D3C33E885A5">
         <di:waypoint xsi:type="dc:Point" x="572.58966" y="196.0"/>
@@ -2126,27 +2207,23 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="1313.0" y="131.0"/>
         <di:waypoint xsi:type="dc:Point" x="1471.0" y="52.0"/>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A_to_shape__C7498481-B8C8-4DD3-83E9-87F0B706A3F1" bpmnElement="_5B947B73-A866-44C1-832F-09A99D570787">
-        <di:waypoint xsi:type="dc:Point" x="891.0" y="923.0"/>
-        <di:waypoint xsi:type="dc:Point" x="755.0" y="925.0"/>
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__C7498481-B8C8-4DD3-83E9-87F0B706A3F1_to_shape__F6E1FEF5-AC3F-4334-B1DE-7A424729A684" bpmnElement="_E9B6783E-423A-4BE8-8FAF-B0BBD0A6289D">
-        <di:waypoint xsi:type="dc:Point" x="755.0" y="925.0"/>
+        <di:waypoint xsi:type="dc:Point" x="610.0" y="925.0"/>
         <di:waypoint xsi:type="dc:Point" x="428.0" y="925.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__84EEAC1A-609B-4D2F-90ED-19CC183B79A5_to_shape__710AF29F-85F4-4A70-8315-CE7E9973F3AB" bpmnElement="_F48B65AD-C7A2-40B0-9B6F-D7EDE8CB7470">
         <di:waypoint xsi:type="dc:Point" x="1320.0" y="627.0"/>
         <di:waypoint xsi:type="dc:Point" x="364.0" y="626.0004"/>
-        <di:waypoint xsi:type="dc:Point" x="364.0" y="766.0"/>
+        <di:waypoint xsi:type="dc:Point" x="364.0" y="726.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__710AF29F-85F4-4A70-8315-CE7E9973F3AB_to_shape__6B13130D-C34E-445B-BEBF-693F6432E3D8" bpmnElement="_E10A605A-D080-4937-943D-866A101D8A62">
-        <di:waypoint xsi:type="dc:Point" x="336.0" y="766.0"/>
-        <di:waypoint xsi:type="dc:Point" x="161.0" y="766.0"/>
+        <di:waypoint xsi:type="dc:Point" x="336.0" y="726.0"/>
+        <di:waypoint xsi:type="dc:Point" x="161.0" y="726.0"/>
         <di:waypoint xsi:type="dc:Point" x="161.0" y="591.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__710AF29F-85F4-4A70-8315-CE7E9973F3AB_to_shape__D18523BB-5DE9-4491-A581-A0BD516ED9CA" bpmnElement="_32320438-AE4A-40DD-97C8-3B31AF99EA7C">
-        <di:waypoint xsi:type="dc:Point" x="392.0" y="766.0"/>
-        <di:waypoint xsi:type="dc:Point" x="889.0" y="766.0"/>
+        <di:waypoint xsi:type="dc:Point" x="392.0" y="726.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1074.0" y="726.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__AC71CB22-43AD-4C8C-8DC8-BC25227D7B58_to_shape__FC894492-FB52-4CA1-B693-F4347DA0DFFD" bpmnElement="_BE33B4FC-82BA-4958-AA3E-844FB702BF8F">
         <di:waypoint xsi:type="dc:Point" x="214.0" y="1142.0"/>
@@ -2180,7 +2257,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="2128.0" y="243.0"/>
         <di:waypoint xsi:type="dc:Point" x="2248.2883" y="243.20506"/>
         <di:waypoint xsi:type="dc:Point" x="2248.2883" y="923.0"/>
-        <di:waypoint xsi:type="dc:Point" x="919.0" y="923.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1181.0" y="923.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__4ABE212A-8878-44AE-8B5D-E727F6A6CE77_to_shape__2AFF2A9E-6783-429E-952B-BA0D9512B2DD" bpmnElement="_C98CA53C-9928-43C9-A513-7920C432135F">
         <di:waypoint xsi:type="dc:Point" x="2128.0" y="243.0"/>
@@ -2251,6 +2328,10 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="973.0" y="209.02031"/>
         <di:waypoint xsi:type="dc:Point" x="973.0" y="286.0"/>
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A_to_shape__929CC8F2-F8F4-48AC-BA69-8063DDD0C115" bpmnElement="_5B947B73-A866-44C1-832F-09A99D570787">
+        <di:waypoint xsi:type="dc:Point" x="1153.0" y="923.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1066.0" y="923.0"/>
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__2AFF2A9E-6783-429E-952B-BA0D9512B2DD_to_shape__CD85F359-4EB9-43E9-9BE0-F69E7D86A350" bpmnElement="_9138A454-122D-49EC-9D02-C7EE71A79685">
         <di:waypoint xsi:type="dc:Point" x="2128.0" y="429.0"/>
         <di:waypoint xsi:type="dc:Point" x="2128.0" y="627.0"/>
@@ -2260,8 +2341,8 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="1923.0" y="627.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__D517A05F-F691-4D42-8A8F-494A69B55B01_to_shape__2AFF2A9E-6783-429E-952B-BA0D9512B2DD" bpmnElement="_6690B65F-74A5-4B98-B89F-02F53A61E57A">
-        <di:waypoint xsi:type="dc:Point" x="994.0" y="874.0"/>
-        <di:waypoint xsi:type="dc:Point" x="2237.0" y="874.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1181.0" y="841.0"/>
+        <di:waypoint xsi:type="dc:Point" x="2237.0" y="841.0"/>
         <di:waypoint xsi:type="dc:Point" x="2237.0" y="429.0"/>
         <di:waypoint xsi:type="dc:Point" x="2156.0" y="429.0"/>
       </bpmndi:BPMNEdge>
@@ -2272,17 +2353,16 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         <di:waypoint xsi:type="dc:Point" x="265.0" y="164.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__D517A05F-F691-4D42-8A8F-494A69B55B01_to_shape__1D8A140C-D7E5-4A2A-8AD5-8FA7DC7A458A" bpmnElement="_53513360-7B1B-402E-B459-D88CBCF93708">
-        <di:waypoint xsi:type="dc:Point" x="938.0" y="874.0"/>
-        <di:waypoint xsi:type="dc:Point" x="891.0" y="874.0"/>
-        <di:waypoint xsi:type="dc:Point" x="891.0" y="895.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1153.0" y="841.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1153.0" y="923.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__00EF2216-7973-47C5-B4FF-1F78ACCDA92E_to_shape__E67BCD83-291B-495D-934E-BA09CD904CB2" bpmnElement="_33D350A0-AD19-4F2C-9E0B-028C91B30644">
         <di:waypoint xsi:type="dc:Point" x="1846.0" y="627.0"/>
         <di:waypoint xsi:type="dc:Point" x="1718.0" y="627.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__D18523BB-5DE9-4491-A581-A0BD516ED9CA_to_shape__D517A05F-F691-4D42-8A8F-494A69B55B01" bpmnElement="_9A5A60BA-5432-4855-9DEC-03D2762B45D9">
-        <di:waypoint xsi:type="dc:Point" x="966.0" y="817.0"/>
-        <di:waypoint xsi:type="dc:Point" x="966.0" y="874.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1151.0" y="777.0"/>
+        <di:waypoint xsi:type="dc:Point" x="1153.0" y="841.0"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__69991960-AB30-4DD3-8CF8-045639E8D28C_to_shape__84EEAC1A-609B-4D2F-90ED-19CC183B79A5" bpmnElement="_F149D599-6C8A-423D-A4C9-76719E141170">
         <di:waypoint xsi:type="dc:Point" x="1442.0" y="627.0"/>
@@ -2299,12 +2379,12 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_IpGj0AHlEeqCtucbQtQG4Q" type="BPSimData">
+  <bpmn2:relationship id="_7ajFYAQ1EeqJlpT_18eR8A" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE" id="_IpGj0QHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C32F3AE7-CC70-4F38-8E3F-4E5C9F9318AE" id="_7ajFYQQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2324,7 +2404,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C311A382-789D-44FD-B63F-77131CBCC38D" id="_IpGj0gHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_356D75DE-6D31-4604-945A-9F4AD640BEEF" id="_7ajFYgQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2344,7 +2424,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_A05B98CA-7075-49B0-A50A-193E60823D96" id="_IpGj0wHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C311A382-789D-44FD-B63F-77131CBCC38D" id="_7ajFYwQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2364,7 +2444,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F2B8424D-3B5B-492C-9D94-75CBEB7C9B4C" id="_IpGj1AHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_A05B98CA-7075-49B0-A50A-193E60823D96" id="_7ajFZAQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2384,7 +2464,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8E9A8E05-1644-417C-97F8-221E7C538E41" id="_IpGj1QHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F2B8424D-3B5B-492C-9D94-75CBEB7C9B4C" id="_7ajFZQQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2404,7 +2484,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0" id="_IpGj1gHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8E9A8E05-1644-417C-97F8-221E7C538E41" id="_7ajFZgQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2424,7 +2504,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1" id="_IpGj1wHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_DE16DFFB-E307-46D8-A22C-ACE75BE340E0" id="_7ajFZwQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2444,7 +2524,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F6E1FEF5-AC3F-4334-B1DE-7A424729A684" id="_IpGj2AHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C7498481-B8C8-4DD3-83E9-87F0B706A3F1" id="_7ajFaAQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2464,7 +2544,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9238C7E1-C461-498D-A3C7-1126AA073E86" id="_IpGj2QHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F6E1FEF5-AC3F-4334-B1DE-7A424729A684" id="_7ajFaQQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2484,7 +2564,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E49D1640-A7B9-4AD9-9C2A-874ADB6A19F7" id="_IpGj2gHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9238C7E1-C461-498D-A3C7-1126AA073E86" id="_7ajFagQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2504,7 +2584,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9E665917-234C-461F-9EAC-83D45417BAD2" id="_IpGj2wHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E49D1640-A7B9-4AD9-9C2A-874ADB6A19F7" id="_7ajFawQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2524,14 +2604,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8AF9C039-1FC0-4D52-A393-C5FF98D646DF" id="_IpGj3AHlEeqCtucbQtQG4Q">
-            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
-              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
-                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
-              </bpsim:ProcessingTime>
-            </bpsim:TimeParameters>
-          </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_6B13130D-C34E-445B-BEBF-693F6432E3D8" id="_IpGj3QHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9E665917-234C-461F-9EAC-83D45417BAD2" id="_7ajFbAQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2551,7 +2624,14 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F0536E60-EAAD-41E9-80D7-24EB0FCA8291" id="_IpGj3gHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_8AF9C039-1FC0-4D52-A393-C5FF98D646DF" id="_7ajFbQQ1EeqJlpT_18eR8A">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_6B13130D-C34E-445B-BEBF-693F6432E3D8" id="_7ajFbgQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2571,7 +2651,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E23B7E7D-D8A1-4D13-B1E6-5996461AA85D" id="_IpGj3wHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F0536E60-EAAD-41E9-80D7-24EB0FCA8291" id="_7ajFbwQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2591,7 +2671,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_AC71CB22-43AD-4C8C-8DC8-BC25227D7B58" id="_IpGj4AHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E23B7E7D-D8A1-4D13-B1E6-5996461AA85D" id="_7ajFcAQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2611,7 +2691,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_CD85F359-4EB9-43E9-9BE0-F69E7D86A350" id="_IpGj4QHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_929CC8F2-F8F4-48AC-BA69-8063DDD0C115" id="_7ajFcQQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2631,7 +2711,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E" id="_IpGj4gHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_AC71CB22-43AD-4C8C-8DC8-BC25227D7B58" id="_7ajFcgQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2651,7 +2731,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D8B89449-6FA0-4B36-A1F1-0DB08DFA24AA" id="_IpGj4wHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_CD85F359-4EB9-43E9-9BE0-F69E7D86A350" id="_7ajFcwQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2671,7 +2751,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_B6CD95F9-9278-40D7-94B5-5181355EC066" id="_IpGj5AHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_00EF2216-7973-47C5-B4FF-1F78ACCDA92E" id="_7ajFdAQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2691,7 +2771,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_84EEAC1A-609B-4D2F-90ED-19CC183B79A5" id="_IpGj5QHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D8B89449-6FA0-4B36-A1F1-0DB08DFA24AA" id="_7ajFdQQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2711,7 +2791,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_69991960-AB30-4DD3-8CF8-045639E8D28C" id="_IpGj5gHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_B6CD95F9-9278-40D7-94B5-5181355EC066" id="_7ajFdgQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2731,7 +2811,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E67BCD83-291B-495D-934E-BA09CD904CB2" id="_IpGj5wHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_84EEAC1A-609B-4D2F-90ED-19CC183B79A5" id="_7ajFdwQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2751,7 +2831,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_AB309943-1C31-4544-94BC-AB6547BA643F" id="_IpGj6AHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_69991960-AB30-4DD3-8CF8-045639E8D28C" id="_7ajFeAQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2771,7 +2851,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D18523BB-5DE9-4491-A581-A0BD516ED9CA" id="_IpGj6QHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_E67BCD83-291B-495D-934E-BA09CD904CB2" id="_7ajFeQQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2791,7 +2871,47 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_7C81970E-4C65-4EAB-A1D9-3044B3F66219" id="_IpGj6gHlEeqCtucbQtQG4Q">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_AB309943-1C31-4544-94BC-AB6547BA643F" id="_7ajFegQ1EeqJlpT_18eR8A">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D18523BB-5DE9-4491-A581-A0BD516ED9CA" id="_7ajFewQ1EeqJlpT_18eR8A">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_7C81970E-4C65-4EAB-A1D9-3044B3F66219" id="_7ajFfAQ1EeqJlpT_18eR8A">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -2814,7 +2934,7 @@ kcontext.setVariable("salida",salida);]]></bpmn2:script>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_IpEHkAHlEeqCtucbQtQG4Q</bpmn2:source>
-    <bpmn2:target>_IpEHkAHlEeqCtucbQtQG4Q</bpmn2:target>
+    <bpmn2:source>_7ahQMAQ1EeqJlpT_18eR8A</bpmn2:source>
+    <bpmn2:target>_7ahQMAQ1EeqJlpT_18eR8A</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>

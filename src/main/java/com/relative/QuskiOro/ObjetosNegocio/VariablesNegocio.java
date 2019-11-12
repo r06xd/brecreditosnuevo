@@ -67,8 +67,17 @@ public class VariablesNegocio implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("RecalcularColateralMontoNovacion")
 	private java.lang.Boolean recalcularColateralMontoNovacion;
 
-	@org.kie.api.definition.type.Label(value = "MontoSolicitadoCliente")
+	@org.kie.api.definition.type.Label("MontoSolicitadoCliente")
 	private java.lang.Double montoSolicitadoCliente;
+
+	@org.kie.api.definition.type.Label("CodigoMensajeError")
+	private java.lang.String codigoMensajeError;
+
+	@org.kie.api.definition.type.Label("MensajeError")
+	private java.lang.String mensajeError;
+
+	@org.kie.api.definition.type.Label(value = "CodigoMensajeErrorConstante")
+	private java.lang.String codigoMensajeErrorConstante;
 
 	public VariablesNegocio() {
 	}
@@ -251,6 +260,31 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.montoSolicitadoCliente = montoSolicitadoCliente;
 	}
 
+	public java.lang.String getCodigoMensajeError() {
+		return this.codigoMensajeError;
+	}
+
+	public void setCodigoMensajeError(java.lang.String codigoMensajeError) {
+		this.codigoMensajeError = codigoMensajeError;
+	}
+
+	public java.lang.String getMensajeError() {
+		return this.mensajeError;
+	}
+
+	public void setMensajeError(java.lang.String mensajeError) {
+		this.mensajeError = mensajeError;
+	}
+
+	public java.lang.String getCodigoMensajeErrorConstante() {
+		return this.codigoMensajeErrorConstante;
+	}
+
+	public void setCodigoMensajeErrorConstante(
+			java.lang.String codigoMensajeErrorConstante) {
+		this.codigoMensajeErrorConstante = codigoMensajeErrorConstante;
+	}
+
 	public VariablesNegocio(java.lang.Double totalGarantia,
 			java.lang.Double totalPeso, java.lang.Double precioGramo,
 			java.lang.Boolean detener, java.lang.Boolean detenerColateral,
@@ -267,7 +301,9 @@ public class VariablesNegocio implements java.io.Serializable {
 			java.lang.Double montoFinanciadoNovacionesAnterior,
 			java.lang.Double montoFinanciadoNovaciones,
 			java.lang.Boolean recalcularColateralMontoNovacion,
-			java.lang.Double montoSolicitadoCliente) {
+			java.lang.Double montoSolicitadoCliente,
+			java.lang.String codigoMensajeError, java.lang.String mensajeError,
+			java.lang.String codigoMensajeErrorConstante) {
 		this.totalGarantia = totalGarantia;
 		this.totalPeso = totalPeso;
 		this.precioGramo = precioGramo;
@@ -289,6 +325,9 @@ public class VariablesNegocio implements java.io.Serializable {
 		this.montoFinanciadoNovaciones = montoFinanciadoNovaciones;
 		this.recalcularColateralMontoNovacion = recalcularColateralMontoNovacion;
 		this.montoSolicitadoCliente = montoSolicitadoCliente;
+		this.codigoMensajeError = codigoMensajeError;
+		this.mensajeError = mensajeError;
+		this.codigoMensajeErrorConstante = codigoMensajeErrorConstante;
 	}
 
 }
